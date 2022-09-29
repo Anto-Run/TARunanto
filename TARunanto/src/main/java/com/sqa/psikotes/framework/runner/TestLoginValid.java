@@ -55,8 +55,8 @@ public class TestLoginValid {
 	@Then("TSLP001001 The system check credentsial login valid")
 	public void tslp001001_the_system_check_credentsial_login_valid() {
 		String strExpect ="Welcome";
+		assertTrue(loginPage.getTxtWelcome().contains(strExpect));
 		extentTest.log(LogStatus.PASS, "System check credentials valid login");
-		loginPage.logout();
 	}
 
 	@When("TSLP001002 admin enter username and password valid")

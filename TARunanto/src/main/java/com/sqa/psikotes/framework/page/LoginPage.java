@@ -1,3 +1,6 @@
+//Author : Runanto
+//Created-date: 29-09-2022 13.00
+//Modified_date
 package com.sqa.psikotes.framework.page;
 
 import org.openqa.selenium.Keys;
@@ -41,7 +44,7 @@ public class LoginPage {
 	@FindBy(id="nikita-form-dialog-tag")
 	private WebElement txtWelcome;
 	
-	@FindBy(xpath="((.//*[normalize-space(text()) and normalize-space(.)='Close'])[1]/following::span[2])")
+	@FindBy(xpath="(.//*[normalize-space(text()) and normalize-space(.)='Close'])[1]/following::span[2]")
 	private WebElement btnOk;
 	
 	@FindBy(xpath="//span[normalize-space()='DEVELOPER']")
@@ -91,9 +94,14 @@ public class LoginPage {
 		btnTidak.click();
 	}
 	
-	public void clickEnter() {
+	public void clickEnterUsername() {
 		this.txtUsername.sendKeys(Keys.ENTER);
 	}
+	
+	public void clickEnterPassword() {
+		
+	}
+	
 	
 	public String getTxtWelcome() {
 		
