@@ -1,3 +1,5 @@
+//Author : Runanto
+//Created-date: 29-09-2022 13.00
 package com.sqa.psikotes.framework.runner;
 
 
@@ -8,15 +10,14 @@ import org.openqa.selenium.WebDriver;
 
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
+import com.sqa.psikotes.framework.connection.DriverSingleton;
 import com.sqa.psikotes.framework.constant.Constants;
 import com.sqa.psikotes.framework.page.LoginPage;
+import com.sqa.psikotes.framework.utils.Utils;
 
-import io.cucumber.java.After;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-
-
 
 public class TestLoginValid {
 	
@@ -54,9 +55,11 @@ public class TestLoginValid {
 
 	@Then("TSLP001001 The system check credentsial login valid")
 	public void tslp001001_the_system_check_credentsial_login_valid() {
-		String strExpect ="Welcome";
-		assertTrue(loginPage.getTxtWelcome().contains(strExpect));
+		String strExpect ="PSIKOTES";
+		assertTrue(loginPage.getTxtPsikotes().contains(strExpect));
 		extentTest.log(LogStatus.PASS, "System check credentials valid login");
+		Utils.delay(1, Constants.CHROME);
+		DriverSingleton.closeObjectInstance();
 	}
 
 	@When("TSLP001002 admin enter username and password valid")
@@ -76,9 +79,11 @@ public class TestLoginValid {
 
 	@Then("TSLP001002 The system check credentsial login valid")
 	public void tslp001002_the_system_check_credentsial_login_valid() {
-		String strExpect ="Welcome";
-		assertTrue(loginPage.getTxtWelcome().contains(strExpect));
+		String strExpect ="PSIKOTES";
+		assertTrue(loginPage.getTxtPsikotes().contains(strExpect));
 		extentTest.log(LogStatus.PASS, "System check credentials valid login");
+		Utils.delay(1, Constants.CHROME);
+		DriverSingleton.closeObjectInstance();
 	}
 
 	@When("TSLP001003 admin enter username and password valid")
@@ -98,9 +103,11 @@ public class TestLoginValid {
 
 	@Then("TSLP001003 he system check credentsial login valid")
 	public void tslp001003_he_system_check_credentsial_login_valid() {
-		String strExpect ="Welcome";
-		assertTrue(loginPage.getTxtWelcome().contains(strExpect));
+		String strExpect ="PSIKOTES";
+		assertTrue(loginPage.getTxtPsikotes().contains(strExpect));
 		extentTest.log(LogStatus.PASS, "System check credentials valid login");
+		Utils.delay(1, Constants.CHROME);
+		DriverSingleton.closeObjectInstance();
 	}
 	
 

@@ -1,6 +1,6 @@
 //Author : Runanto
 //Created-date: 29-09-2022 13.00
-//Modified_date
+
 package com.sqa.psikotes.framework.page;
 
 import org.openqa.selenium.Keys;
@@ -13,9 +13,6 @@ import com.sqa.psikotes.framework.connection.DriverSingleton;
 import com.sqa.psikotes.framework.constant.Constants;
 import com.sqa.psikotes.framework.utils.Utils;
 
-
-
-	
 public class LoginPage {
 
 		
@@ -52,6 +49,9 @@ public class LoginPage {
 	
 	@FindBy(xpath="(.//*[normalize-space(text()) and normalize-space(.)='TIDAK'])[1]/following::span[1]")
 	private WebElement btnTidak;
+	
+	@FindBy(xpath="//font[normalize-space()='PSIKOTEST']")
+	private WebElement txtPsikotes;
 	
 	public void loginValidOne(String username, String password) {
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
@@ -106,6 +106,11 @@ public class LoginPage {
 	public String getTxtWelcome() {
 		
 		return txtWelcome.getText();
+	}
+	
+	public String getTxtPsikotes() {
+		
+		return txtPsikotes.getText();
 	}
 	
 	

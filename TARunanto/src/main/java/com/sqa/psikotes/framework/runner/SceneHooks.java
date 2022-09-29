@@ -1,10 +1,10 @@
+//Author : Runanto
+//Created-date: 29-09-2022
 package com.sqa.psikotes.framework.runner;
 
 import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
@@ -51,6 +51,12 @@ public class SceneHooks {
 		reports.flush();
 	}
 	
+	
+//	@AfterTest
+//	public static void close() {
+//		Utils.delay(1, Constants.CHROME);
+//		DriverSingleton.closeObjectInstance();
+//	}
 
 	
 	@AfterAll
