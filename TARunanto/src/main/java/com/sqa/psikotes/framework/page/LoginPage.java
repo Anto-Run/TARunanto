@@ -84,22 +84,29 @@ public class LoginPage {
 		btnGreenPassword.click();
 	}
 	
-	public void clickButtonOk() {
+	public void clickOk() {
+		Utils.driverWaitTxt(driver, Constants.TIMEOUT, btnOk);
+		Utils.delay(2, Constants.GLOB_PARAM_DELAY);
 		btnOk.click();
+		Utils.delay(2, Constants.GLOB_PARAM_DELAY);
 	}
 	
 	public void logout() {
 		btnOk.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		btnAccount.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		btnTidak.click();
 	}
 	
 	public void clickEnterUsername() {
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		this.txtUsername.sendKeys(Keys.ENTER);
 	}
 	
 	public void clickEnterPassword() {
-		
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		this.txtPassword.sendKeys(Keys.ENTER);
 	}
 	
 	

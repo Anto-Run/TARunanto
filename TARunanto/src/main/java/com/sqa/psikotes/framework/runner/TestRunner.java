@@ -16,5 +16,3 @@ plugin = {"pretty","html:target/psikotes/htmlreport/PSIKOTESRunner.html",
 public class TestRunner extends AbstractTestNGCucumberTests {
 
 }
-
-//
