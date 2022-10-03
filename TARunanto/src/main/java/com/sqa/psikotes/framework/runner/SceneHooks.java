@@ -32,10 +32,8 @@ public class SceneHooks {
 	public static ExtentTest extentTest;
 	public static ExtentReports reports = new ExtentReports("target/psikotes/extentreport/psikotes-scene-xr.html");
 	private static PSIKOTESScene[] tests = PSIKOTESScene.values();
-	private static final int[] DATA_OUTLINE = {1,1,1,1,1};
-	private String testReport = "";
-	
-
+	private static final int[] DATA_OUTLINE = {1,1,1,1,1, 6, 6, 6,1,1, 1, 1,1,1};
+	private String testReport = "";	
 	@Before
 	public void setUp() {
 		DriverSingleton.getInstance(Constants.CHROME);

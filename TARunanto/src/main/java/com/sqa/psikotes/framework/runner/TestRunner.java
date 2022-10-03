@@ -4,8 +4,11 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
-features = {"src/main/resources/features/001LPLoginValid.feature", 
-		"src/main/resources/features/051APOpenPageAdminValid.feature"},
+features = {"src/main/resources/features/001LPLoginValid.feature",
+		"src/main/resources/features/051APOpenPageAdminValid.feature",
+		"src/main/resources/features/055APSearchDataAdminValid.feature",
+		"src/main/resources/features/059APTambahDataAdminValid.feature",
+		"src/main/resources/features/063APShowDataAdminValid.feature"},
 glue = "com.sqa.psikotes.framework.runner",
 monochrome=true,
 plugin = {"pretty","html:target/psikotes/htmlreport/PSIKOTESRunner.html",
