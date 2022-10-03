@@ -53,36 +53,56 @@ public class AdminPage extends LoginPage{
 	@FindBy(xpath="(.//*[normalize-space(text()) and normalize-space(.)='Close'])[1]/following::span[2]")
 	private WebElement btnNo;
 	
-	//btn page
-	@FindBy(xpath="/html[1]/body[1]/div[2]/div[2]/div[1]/div[2]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/div[1]/div[3]/div[1]/div[4]/ul[1]/li[1]/a[1]")
+	/*
+	 * Button Page
+	 */
+	
+	
+	@FindBy(xpath = "//div[4]//ul[1]//li[1]//a[1]")
 	private WebElement btnPrev;
 	
-	@FindBy(xpath="/html[1]/body[1]/div[2]/div[2]/div[1]/div[2]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/div[1]/div[3]/div[1]/div[4]/ul[1]/li[8]/a[1]")
+	@FindBy(xpath = "//div[4]//ul[1]//li[8]//a[1]")
 	private WebElement btnNext;
 	
-	@FindBy(xpath="/html[1]/body[1]/div[2]/div[2]/div[1]/div[2]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/div[1]/div[3]/div[1]/div[4]/ul[1]/li[2]/a[1]")
+	@FindBy(xpath = "//div[4]//ul[1]//li[1]//a[1]")
+	private WebElement btnNextTwentyFive;
+
+	@FindBy(xpath = "//div[4]//ul[1]//li[1]//a[1]")
+	private WebElement btnNextFifty;
+	
+	@FindBy(linkText="1")
 	private WebElement btnPOne;
 	
-	@FindBy(xpath="/html[1]/body[1]/div[2]/div[2]/div[1]/div[2]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/div[1]/div[3]/div[1]/div[4]/ul[1]/li[3]/a[1]")
+	@FindBy(linkText="2")
 	private WebElement btnPTwo;
 	
-	@FindBy(xpath="//div[4]//ul[1]//li[4]//a[1]")
+	
+	@FindBy(linkText="3")
 	private WebElement btnPThree;
 	
-	@FindBy(xpath="/html[1]/body[1]/div[2]/div[2]/div[1]/div[2]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/div[1]/div[3]/div[1]/div[4]/ul[1]/li[5]/a[1]")
+	@FindBy(linkText="4")
 	private WebElement btnPFour;
 	
-	@FindBy(xpath="/html[1]/body[1]/div[2]/div[2]/div[1]/div[2]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/div[1]/div[3]/div[1]/div[4]/ul[1]/li[6]/a[1]")
+	@FindBy(linkText="5")
 	private WebElement btnPFive;
 	
-	@FindBy(xpath="/html[1]/body[1]/div[2]/div[2]/div[1]/div[2]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/div[1]/div[3]/div[1]/div[4]/ul[1]/li[7]/a[1]")
+	@FindBy(linkText="6")
 	private WebElement btnPSix;
-	
-	@FindBy(xpath="//td[@id='tl_user_management--51688-cell-6-0']")
-	private WebElement btnLastTen;
 
+	@FindBy(linkText="7")
+	private WebElement btnPSeven;
 	
+	@FindBy(linkText="8")
+	private WebElement btnPEight;
 	
+	@FindBy(linkText="9")
+	private WebElement btnPNine;
+	
+	@FindBy(linkText="10")
+	private WebElement btnPTen;
+	
+
+
 	//Insert
 	@FindBy(xpath="//input[@id='tl_user_management--51690_text']")
 	private WebElement insertSearch;
@@ -110,6 +130,8 @@ public class AdminPage extends LoginPage{
 	@FindBy(xpath="tl_agent_editable-14-51733_text")
 	private WebElement btnDropSupervisor;
 	
+	@FindBy(id="tl_user_management--51688_show_text")
+	private WebElement dropShowPage;
 	
 	//Select
 	@FindBy(xpath="//select[@id='tl_agent_editable-14-51731_text']")
@@ -118,8 +140,19 @@ public class AdminPage extends LoginPage{
 	@FindBy(xpath="//select[@id='tl_agent_editable-14-51733_text']")
 	private WebElement selectSupervisor;
 	
-	@FindBy(xpath="//select[@id='tl_user_management--51688_show_text']")
-	private WebElement selectShowPage;
+	@FindBy(xpath = "//option[@value='10']")
+	private WebElement selectTen;
+	
+	@FindBy(xpath = "//option[@value='25']")
+	private WebElement selectTwentyFive;
+	
+	@FindBy(xpath = "//option[@value='50']")
+	private WebElement selectFifty;
+	
+	@FindBy(xpath = "//option[@value='100']")
+	private WebElement selectOneHundred;
+	
+
 	
 	//Validation (txt)
 	@FindBy(xpath="//input[@id='tl_user_management--51695_text']")
@@ -149,21 +182,8 @@ public class AdminPage extends LoginPage{
 	
 	//Validation (button)
 	@FindBy(xpath="//td[@id='tl_user_management--51688-cell-0-0']")
-	private WebElement btnDataOne;
-	
-	@FindBy(xpath="//td[@id='tl_user_management--51688-cell-9-0']")
-	
-	
-	private WebElement btnDataTen;
-	
-	@FindBy(xpath="//td[@id='tl_user_management--51688-cell-24-0']")
-	private WebElement btnDataTwentyFive;
-	
-	@FindBy(xpath="//td[@id='tl_user_management--51688-cell-49-0']")
-	private WebElement btnDataFifty;
-	
-	@FindBy(xpath="//td[@id='tl_user_management--51688-cell-99-0']")
-	private WebElement btnDataOneHundred;
+	private WebElement btnDataFirst;
+
 
 	//Method
 	public void adminPage() {
@@ -253,19 +273,7 @@ public class AdminPage extends LoginPage{
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 	}
 	
-//	public void clickPrivileges() {
-//		btnDropPrivileges.click();
-//		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
-//		selectPrivileges.click();
-//		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
-//	}
-//	
-//	public void clickSupervisor() {
-//		btnDropSupervisor.click();
-//		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
-//		selectSupervisor.click();
-//		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
-//	}
+
 	
 	public void clickTelephone(String telephone) {
 		this.txtAddTelephone.clear();
@@ -296,113 +304,159 @@ public class AdminPage extends LoginPage{
 	}
 	
 	public void clickBtnPOne() {
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		btnPOne.click();
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 	}
 	
 	
 	public void clickBtnPTwo() {
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		btnPTwo.click();
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 	}
 	
 
 	public void clickBtnPThree() {
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		btnPThree.click();
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 	}
 	
 	public void clickBtnPFour() {
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		btnPFour.click();
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 	}
 	
 	public void clickBtnPFive() {
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		btnPFive.click();
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 	}
 	
 	public void clickBtnPSix() {
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		btnPSix.click();
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 	}
 	
 	public void clickBtnPSeven() {
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		btnNext.click();
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
-		btnPTwo.click();
+		btnPSeven.click();
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 	}
 	
 	public void clickBtnPEight() {
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		btnNext.click();
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
-		btnPThree.click();
+		btnPEight.click();
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 	}
 	
 	public void clickBtnPNine() {
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		btnNext.click();
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
-		btnPFour.click();
+		btnPNine.click();
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 	}
 	
 	public void clickBtnPTen() {
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		btnNext.click();
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
-		btnPFive.click();
+		btnPTen.click();
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 	}
 	
 	
 	
-	public void clickBtnNext() {
+	public void clickBtnNextTen() {
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		btnNext.click();
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 	}
 	
-	public void clickBtnPrev() {
-		btnPSix.click();
+	public void clickBtnPrevTen() {
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		btnNext.click();
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		btnPrev.click();
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 	}
 	
+	public void clickBtnNextTwentyFive() {
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		btnNextTwentyFive.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+	}
+	
+	public void clickBtnPrevTwentyFive() {
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		btnNextTwentyFive.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		btnPrev.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		
+	}
+	
+	public void clickBtnNextFifty() {
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		btnNextFifty.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+	}
+	
+	public void clickBtnPrevFifty() {
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		btnNextFifty.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		btnPrev.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		
+	}
+	
+	
+	
 	//select
 	public void selectShowPageTen() {
-		selectShowPage.click();
+		dropShowPage.click();
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
-		new Select(selectShowPage).selectByVisibleText("10");
+		new Select(dropShowPage).selectByVisibleText("10");
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
-		selectShowPage.click();
+		selectTen.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		
 	}
 	
 	public void selectShowPageTwentyFive() {
-		selectShowPage.click();
+		dropShowPage.click();
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
-		new Select(selectShowPage).selectByVisibleText("25");
+		new Select(dropShowPage).selectByVisibleText("25");
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
-		selectShowPage.click();
+		selectTwentyFive.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 	}
 	
 	public void selectShowPageFifty() {
-		selectShowPage.click();
+		dropShowPage.click();
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
-		new Select(selectShowPage).selectByVisibleText("50");
+		new Select(dropShowPage).selectByVisibleText("50");
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
-		selectShowPage.click();
+		selectFifty.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		
 	}
 	
 	public void selectShowPageOneHundred() {
-		selectShowPage.click();
+		dropShowPage.click();
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
-		new Select(selectShowPage).selectByVisibleText("100");
+		new Select(dropShowPage).selectByVisibleText("100");
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
-		selectShowPage.click();
-		
+		selectOneHundred.click();
 	}
 	
 	
@@ -462,11 +516,11 @@ public class AdminPage extends LoginPage{
 		return txtNotFound.getText();
 	}
 	
-	public boolean getBtnDataOne() {
+	public boolean getBtnDataFirst() {
 		boolean isData = false;
-		Utils.driverWaitTxt(driver, Constants.TIMEOUT, btnDataOne);
+		Utils.driverWaitTxt(driver, Constants.TIMEOUT, btnDataFirst);
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
-		int intData = Integer.parseInt(btnDataOne.getText());
+		int intData = Integer.parseInt(btnDataFirst.getText());
 		if(intData == 1) {
 			return isData = true;
 		}else if(intData == 11) {
@@ -493,107 +547,12 @@ public class AdminPage extends LoginPage{
 			return isData = true;
 		}else if (intData == 76) {
 			return isData = true;
-		}else if(intData > 91) {
+		}else if(intData >= 91) {
 			return isData = true;
 		}else {
 			return isData;
 		}
 	}
 	
-	public boolean getBtnDataTen() {
-		boolean isData = false;
-		Utils.driverWaitTxt(driver, Constants.TIMEOUT, btnDataTen);
-		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
-		int intData = Integer.parseInt(btnDataTen.getText());
-		if(intData == 10) {
-			return isData = true;
-		}else if(intData == 20) {
-			return isData = true;
-		}else if (intData == 30) {
-			return isData == true;
-		}else if (intData == 40) {
-			return isData = true;
-		}else if (intData == 50) {
-			return isData = true;
-		}else if (intData == 60) {
-			return isData = true;
-		}else if (intData == 70) {
-			return isData = true;
-		}else if (intData == 80) {
-			return isData = true;
-		}else if (intData == 90) {
-			return isData = true;
-		}else if (intData == 100) {
-			return isData = true;
-		}else if (intData >100) {
-			return isData = true;
-		}else {
-			return isData;
-		}
-	}
-	
-	
-	public boolean getBntDataLastTen() {
-		
-		boolean isData = false;
-		Utils.driverWaitTxt(driver, Constants.TIMEOUT, btnLastTen);
-		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
-		int intData = Integer.parseInt(btnLastTen.getText());
-		btnLastTen.click();
-		if(intData > 100) {
-			return isData = true;
-		}
-		return isData;
-	}
-	
-	public boolean getBtnDataTwentyFive() {
-		boolean isData = false;
-		Utils.driverWaitTxt(driver, Constants.TIMEOUT, btnDataTwentyFive);
-		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
-		int intData = Integer.parseInt(btnDataTwentyFive.getText());
-		if(intData == 25) {
-			return isData = true;
-		}else if(intData == 50) {
-			return isData = true;
-		}else if (intData == 75) {
-			return isData == true;
-		}else if (intData == 100) {
-			return isData == true;
-		}else if (intData > 100) {
-			return isData == true;
-		}else {
-			return isData;
-		}
-	}
-	
-	public boolean getBtnDataFifty() {
-		boolean isData = false;
-		Utils.driverWaitTxt(driver, Constants.TIMEOUT, btnDataFifty);
-		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
-		int intData = Integer.parseInt(btnDataFifty.getText());
-		if(intData == 50) {
-			return isData = true;
-		}else if(intData == 100) {
-			return isData = true;
-		}else if (intData > 150) {
-			return isData == true;
-		}else {
-			return isData;
-		}
-	}
-	
-	public boolean getBtnDataOneHundred() {
-		boolean isData = false;
-		Utils.driverWaitTxt(driver, Constants.TIMEOUT, btnDataOneHundred);
-		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
-		int intData = Integer.parseInt(btnDataOneHundred.getText());
-		if(intData == 100) {
-			return isData = true;
-		}else if (intData > 100) {
-			return isData == true;
-		}else {
-			return isData;
-		}
-	}
 	
 }

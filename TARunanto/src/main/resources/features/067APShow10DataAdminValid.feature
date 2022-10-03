@@ -5,7 +5,7 @@
 Feature: TSAP005 Menampilkan10 Data admin
 
   Background: 
-    Given TSAP005 Admin berhasil masuk ke halaman admin serta memilih10 pada icon show
+    Given TSAP005 Admin berhasil masuk ke halaman admin serta memilih10 pada icon show page
 
   @tag1
   Scenario: TSAP005001 Admin menampilkan10 data  admin pada page ke1

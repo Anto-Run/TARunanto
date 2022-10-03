@@ -45,7 +45,7 @@ public class TestShowDataAdminValid {
 	@Then("TSAP004001  Admin berhasil menampilkan10 data admin")
 	public void tsap004001_admin_berhasil_menampilkan10_data_admin() {
 	   boolean isData = true;
-	   assertEquals(adminPage.getBtnDataTen(),isData);
+	   assertEquals(adminPage.getBtnDataFirst(),isData);
 	   extentTest.log(LogStatus.PASS, "Admin berhasil menampilkan 10 data admin");
 	}
 
@@ -58,7 +58,7 @@ public class TestShowDataAdminValid {
 	@Then("TSAP004002  Admin berhasil menampilkan25 data admin")
 	public void tsap004002_admin_berhasil_menampilkan25_data_admin() {
 		   boolean isData = true;
-		   assertEquals(adminPage.getBtnDataTwentyFive(),isData);
+		   assertEquals(adminPage.getBtnDataFirst(),isData);
 		   extentTest.log(LogStatus.PASS, "Admin berhasil menampilkan 25 data admin");
 	}
 
@@ -71,7 +71,7 @@ public class TestShowDataAdminValid {
 	@Then("TSAP004003  Admin berhasil menampilkan50 data admin")
 	public void tsap004003_admin_berhasil_menampilkan50_data_admin() {
 		 boolean isData = true;
-		 assertEquals(adminPage.getBtnDataFifty(),isData);
+		 assertEquals(adminPage.getBtnDataFirst(),isData);
 		 extentTest.log(LogStatus.PASS, "Admin berhasil menampilkan 50 data admin");
 	}
 
@@ -84,7 +84,7 @@ public class TestShowDataAdminValid {
 	@Then("TSAP004004  Admin berhasil menampilkan100 data admin")
 	public void tsap004004_admin_berhasil_menampilkan100_data_admin() {
 		 boolean isData = true;
-		 assertEquals(adminPage.getBtnDataOneHundred(),isData);
+		 assertEquals(adminPage.getBtnDataFirst(),isData);
 		 extentTest.log(LogStatus.PASS, "Admin berhasil menampilkan 100 data admin");
 	}
 }
