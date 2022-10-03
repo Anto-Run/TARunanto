@@ -1,6 +1,7 @@
 //Author : Runanto
 //Created-date: 29-09-2022 13.00
 
+
 package com.sqa.psikotes.framework.page;
 
 import org.openqa.selenium.Keys;
@@ -60,6 +61,7 @@ public class LoginPage {
 	}
 	
 	public void loginValidTwo(String username, String password) {
+		Utils.driverWaitTxt(driver, Constants.TIMEOUT, txtUsername);
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		this.txtUsername.sendKeys(username);
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
@@ -126,5 +128,3 @@ public class LoginPage {
  
 	
 }
-
-

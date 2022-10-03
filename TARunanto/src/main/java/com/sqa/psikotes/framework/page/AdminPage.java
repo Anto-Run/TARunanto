@@ -58,7 +58,7 @@ public class AdminPage extends LoginPage{
 	private WebElement btnPrev;
 	
 	@FindBy(xpath="/html[1]/body[1]/div[2]/div[2]/div[1]/div[2]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/div[1]/div[3]/div[1]/div[4]/ul[1]/li[8]/a[1]")
-	private WebElement btnProv;
+	private WebElement btnNext;
 	
 	@FindBy(xpath="/html[1]/body[1]/div[2]/div[2]/div[1]/div[2]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/div[1]/div[3]/div[1]/div[4]/ul[1]/li[2]/a[1]")
 	private WebElement btnPOne;
@@ -66,7 +66,7 @@ public class AdminPage extends LoginPage{
 	@FindBy(xpath="/html[1]/body[1]/div[2]/div[2]/div[1]/div[2]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/div[1]/div[3]/div[1]/div[4]/ul[1]/li[3]/a[1]")
 	private WebElement btnPTwo;
 	
-	@FindBy(xpath="/html[1]/body[1]/div[2]/div[2]/div[1]/div[2]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/div[1]/div[3]/div[1]/div[4]/ul[1]/li[4]/a[1]")
+	@FindBy(xpath="//div[4]//ul[1]//li[4]//a[1]")
 	private WebElement btnPThree;
 	
 	@FindBy(xpath="/html[1]/body[1]/div[2]/div[2]/div[1]/div[2]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/div[1]/div[3]/div[1]/div[4]/ul[1]/li[5]/a[1]")
@@ -76,9 +76,10 @@ public class AdminPage extends LoginPage{
 	private WebElement btnPFive;
 	
 	@FindBy(xpath="/html[1]/body[1]/div[2]/div[2]/div[1]/div[2]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/div[1]/div[3]/div[1]/div[4]/ul[1]/li[7]/a[1]")
-	private WebElement btnSix;
+	private WebElement btnPSix;
 	
-	
+	@FindBy(xpath="//td[@id='tl_user_management--51688-cell-6-0']")
+	private WebElement btnLastTen;
 
 	
 	
@@ -151,6 +152,8 @@ public class AdminPage extends LoginPage{
 	private WebElement btnDataOne;
 	
 	@FindBy(xpath="//td[@id='tl_user_management--51688-cell-9-0']")
+	
+	
 	private WebElement btnDataTen;
 	
 	@FindBy(xpath="//td[@id='tl_user_management--51688-cell-24-0']")
@@ -292,6 +295,80 @@ public class AdminPage extends LoginPage{
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 	}
 	
+	public void clickBtnPOne() {
+		btnPOne.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+	}
+	
+	
+	public void clickBtnPTwo() {
+		btnPTwo.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+	}
+	
+
+	public void clickBtnPThree() {
+		btnPThree.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+	}
+	
+	public void clickBtnPFour() {
+		btnPFour.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+	}
+	
+	public void clickBtnPFive() {
+		btnPFive.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+	}
+	
+	public void clickBtnPSix() {
+		btnPSix.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+	}
+	
+	public void clickBtnPSeven() {
+		btnNext.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		btnPTwo.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+	}
+	
+	public void clickBtnPEight() {
+		btnNext.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		btnPThree.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+	}
+	
+	public void clickBtnPNine() {
+		btnNext.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		btnPFour.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+	}
+	
+	public void clickBtnPTen() {
+		btnNext.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		btnPFive.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+	}
+	
+	
+	
+	public void clickBtnNext() {
+		btnNext.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+	}
+	
+	public void clickBtnPrev() {
+		btnPSix.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		btnPrev.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+	}
+	
 	//select
 	public void selectShowPageTen() {
 		selectShowPage.click();
@@ -396,13 +473,11 @@ public class AdminPage extends LoginPage{
 			return isData = true;
 		}else if (intData == 21) {
 			return isData = true;
-		}
-		else if (intData == 31) {
+		}else if (intData == 31) {
 			return isData = true;
 		}else if (intData == 41) {
 			return isData = true;
-		}
-		else if (intData == 51) {
+		}else if (intData == 51) {
 			return isData = true;
 		}else if (intData == 61) {
 			return isData = true;
@@ -412,12 +487,13 @@ public class AdminPage extends LoginPage{
 			return isData = true;
 		}else if (intData == 91) {
 			return isData = true;
-		}
-		else if (intData == 26) {
+		}else if (intData == 26) {
 			return isData = true;
 		}else if (intData == 51) {
 			return isData = true;
 		}else if (intData == 76) {
+			return isData = true;
+		}else if(intData > 91) {
 			return isData = true;
 		}else {
 			return isData;
@@ -435,13 +511,11 @@ public class AdminPage extends LoginPage{
 			return isData = true;
 		}else if (intData == 30) {
 			return isData == true;
-		}
-		else if (intData == 40) {
+		}else if (intData == 40) {
 			return isData = true;
 		}else if (intData == 50) {
 			return isData = true;
-		}
-		else if (intData == 60) {
+		}else if (intData == 60) {
 			return isData = true;
 		}else if (intData == 70) {
 			return isData = true;
@@ -456,6 +530,20 @@ public class AdminPage extends LoginPage{
 		}else {
 			return isData;
 		}
+	}
+	
+	
+	public boolean getBntDataLastTen() {
+		
+		boolean isData = false;
+		Utils.driverWaitTxt(driver, Constants.TIMEOUT, btnLastTen);
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		int intData = Integer.parseInt(btnLastTen.getText());
+		btnLastTen.click();
+		if(intData > 100) {
+			return isData = true;
+		}
+		return isData;
 	}
 	
 	public boolean getBtnDataTwentyFive() {
