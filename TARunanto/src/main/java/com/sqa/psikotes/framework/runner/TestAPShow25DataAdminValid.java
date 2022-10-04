@@ -13,14 +13,14 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class TestShow25DataAdminValid {
+public class TestAPShow25DataAdminValid {
 	
 	private static WebDriver driver;
 	private static ExtentTest extentTest;
 	
 	private AdminPage adminPage = new AdminPage ();
 	
-	public TestShow25DataAdminValid() {
+	public TestAPShow25DataAdminValid() {
 		driver = SceneHooks.driver;
 		extentTest = SceneHooks.extentTest;
 	}

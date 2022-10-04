@@ -44,10 +44,10 @@ Feature: TSAP002 Admin Search Data
     Then TSAP002003 Admin berhasil mencari <dataThree> yang dicari
 
     Examples: 
-      | dataThree  |
-      | witri      |
-      | Test Witri |
-      | Admin      |
-      | DEVELOPER  |
-      |        007 |
-      | ACTIVE     |
+      | dataThree    |
+      | Elijah       |
+      | Nick Doherty |
+      | Admin        |
+      | DEVELOPER    |
+      |   2771035365 |
+      | ACTIVE       |

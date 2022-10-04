@@ -53,6 +53,9 @@ public class AdminPage extends LoginPage{
 	@FindBy(xpath="(.//*[normalize-space(text()) and normalize-space(.)='Close'])[1]/following::span[2]")
 	private WebElement btnNo;
 	
+	@FindBy(xpath="(.//*[normalize-space(text()) and normalize-space(.)='NO'])[1]/following::span[1]")
+	private WebElement btnYesReset;
+	
 	/*
 	 * Button Page
 	 */
@@ -101,8 +104,15 @@ public class AdminPage extends LoginPage{
 	@FindBy(linkText="10")
 	private WebElement btnPTen;
 	
+	@FindBy(xpath="//span[normalize-space()='Reset Password']")
+	private WebElement btnResetPassword;
+	
+	
 
-
+	//CheckBox
+	@FindBy(xpath="//tbody/tr[10]/td[1]/input[1]")
+	private WebElement checkDataAdmin;
+	
 	//Insert
 	@FindBy(xpath="//input[@id='tl_user_management--51690_text']")
 	private WebElement insertSearch;
@@ -119,6 +129,7 @@ public class AdminPage extends LoginPage{
 	
 	@FindBy(id="tl_agent_editable-14-51741_text")
 	private WebElement txtAddPassword;
+	
 	
 	
 	//Dropdown
@@ -180,11 +191,15 @@ public class AdminPage extends LoginPage{
 	@FindBy(xpath="//th[normalize-space()='User Name']")
 	private WebElement txtNotFound;
 	
+	@FindBy(xpath="//div[@id='nikita-form-dialog']/p")
+	private WebElement txtDoneReset;
+	
 	//Validation (button)
 	@FindBy(xpath="//td[@id='tl_user_management--51688-cell-0-0']")
 	private WebElement btnDataFirst;
 
-
+	
+	
 	//Method
 	public void adminPage() {
 		btnUserManagement.click();
@@ -257,12 +272,14 @@ public class AdminPage extends LoginPage{
 		
 	}
 	public void clickBtnAdd(){
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		btnAdd.click();
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		
 	}
 	
 	public void clickBtnSaveData() {
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		btnSaveData.click();
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 	}
@@ -294,6 +311,7 @@ public class AdminPage extends LoginPage{
 	}
 	
 	public void clickBtnYes() {
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		btnYes.click();
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 	}
@@ -419,7 +437,23 @@ public class AdminPage extends LoginPage{
 		
 	}
 	
+	public void clickCheckPassword() {
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		checkDataAdmin.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+	}
 	
+	public void clickBtnResetPassword() {
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		btnResetPassword.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+	}
+	
+	public void clickBtnYesReset() {
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		btnYesReset.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+	}
 	
 	//select
 	public void selectShowPageTen() {
@@ -552,6 +586,12 @@ public class AdminPage extends LoginPage{
 		}else {
 			return isData;
 		}
+	}
+	
+	public String getTxtDoneReset() {
+		Utils.driverWaitTxt(driver, Constants.TIMEOUT, txtDoneReset);
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		return txtDoneReset.getText();
 	}
 	
 	

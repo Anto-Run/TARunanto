@@ -13,7 +13,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class TestSearchDataAdminValid {
+public class TestAPSearchDataAdminValid {
 
 	private static WebDriver driver;
 	private static ExtentTest extentTest;
@@ -21,7 +21,7 @@ public class TestSearchDataAdminValid {
 	
 	private AdminPage adminPage = new AdminPage ();
 	
-	public TestSearchDataAdminValid() {
+	public TestAPSearchDataAdminValid() {
 		driver = SceneHooks.driver;
 		extentTest = SceneHooks.extentTest;
 	}
