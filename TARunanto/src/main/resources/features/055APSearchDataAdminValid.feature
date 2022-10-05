@@ -29,13 +29,13 @@ Feature: TSAP002 Admin Search Data
     Then TSAP002002 Admin berhasil mencari <dataTwo> yang dicari
 
     Examples: 
-      | dataTwo         |
-      | admin1          |
-      | Satrio          |
-      | Admin           |
-      | DEVELOPER       |
-      | 123444444444444 |
-      | qqqq            |
+      | dataTwo    |
+      | Tyler      |
+      | Tyler Bell |
+      | Admin      |
+      | DEVELOPER  |
+      | 4251768538 |
+      | ACTIVE     |
 
   @tag3
   Scenario Outline: TSAP002003 Admin mencari data dengan tombol enter pada keyboard

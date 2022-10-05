@@ -33,10 +33,14 @@ public class SceneHooks {
 	public static ExtentReports reports = new ExtentReports("target/psikotes/extentreport/psikotes-scene-xr.html");
 	private static PSIKOTESScene[] tests = PSIKOTESScene.values();
 	private static final int[] DATA_OUTLINE = {1, 1,1,1, 1, 
-												6, 6, 6, 1,1,1,1,
+												6, 6, 6, 
+//												1, 1,
+												1,1,1,1,
 												1,1,1,1,1,1,1,1,1,1,1,1,
 												1,1,1,1,1,1,
-												1, 1, 1, 1, 1};
+												1, 1, 1, 1, 1, 
+												1,1,
+												4,6,3,1};
 	private String testReport = "";	
 	@Before
 	public void setUp() {

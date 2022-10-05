@@ -56,6 +56,15 @@ public class AdminPage extends LoginPage{
 	@FindBy(xpath="(.//*[normalize-space(text()) and normalize-space(.)='NO'])[1]/following::span[1]")
 	private WebElement btnYesReset;
 	
+	@FindBy(xpath="//tr[10]/td[11]/div/table/tbody/tr/td/div/img")
+	private WebElement btnEditData;
+	
+	@FindBy(xpath="//span[normalize-space()='Reset Password']")
+	private WebElement btnResetPassword;
+	
+	@FindBy(xpath="//button[@id='51743_query']/span")
+	private WebElement btnUpdateData;
+	
 	/*
 	 * Button Page
 	 */
@@ -104,22 +113,30 @@ public class AdminPage extends LoginPage{
 	@FindBy(linkText="10")
 	private WebElement btnPTen;
 	
-	@FindBy(xpath="//span[normalize-space()='Reset Password']")
-	private WebElement btnResetPassword;
+	@FindBy(xpath="//div[4]//ul[1]//li[2]//a[1]")
+	private WebElement btnOneOneHundred;
+	
+
+	
 	
 	
 
-	//CheckBox
+	/*
+	 * Checkbox
+	 */
 	@FindBy(xpath="//tbody/tr[10]/td[1]/input[1]")
 	private WebElement checkDataAdmin;
 	
-	//Insert
+	/*
+	 * Insert
+	 */
 	@FindBy(xpath="//input[@id='tl_user_management--51690_text']")
 	private WebElement insertSearch;
 	
 	//txt Add data
 	@FindBy(id="tl_agent_editable-14-51730_text")
 	private WebElement txtAddFullName;
+	
 	
 	@FindBy(id="tl_agent_editable-14-51736_text")
 	private WebElement txtAddTelephone;
@@ -129,6 +146,27 @@ public class AdminPage extends LoginPage{
 	
 	@FindBy(id="tl_agent_editable-14-51741_text")
 	private WebElement txtAddPassword;
+	
+	/*
+	 * Txt Update data
+	 */
+	
+	@FindBy(xpath="//input[@id='tl_agent_editable-21-51730_text']")
+	private WebElement txtUpdateFullName;
+	
+	@FindBy(xpath="//input[@id='tl_agent_editable-21-51736_text']")
+	private WebElement txtUpdateTelephone;
+	
+	
+	@FindBy(xpath="//input[@id='tl_agent_editable-21-51738_text']")
+	private WebElement txtUpdateUserActive;
+	
+	
+	@FindBy(xpath="//input[@id='tl_agent_editable-21-51740_text']")
+	private WebElement txtUpdateUsername;
+	
+	
+	
 	
 	
 	
@@ -236,6 +274,62 @@ public class AdminPage extends LoginPage{
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 	}
 	
+	public void updateFullName(String fullname) {
+		this.txtUpdateFullName.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		this.txtUpdateFullName.clear();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		this.txtUpdateFullName.sendKeys(fullname);
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		
+	}
+	
+	public void updateTelephone(String telephone) {
+		this.txtUpdateTelephone.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		this.txtUpdateTelephone.clear();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		this.txtUpdateTelephone.sendKeys(telephone);
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+	}
+	
+	public void updateUserActive(String userActive) {
+		this.txtUpdateUserActive.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		this.txtUpdateUserActive.clear();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		this.txtUpdateUserActive.sendKeys(userActive);
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+	}
+	
+	public void updateUsername(String username) {
+		this.txtUpdateUsername.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		this.txtUpdateUsername.clear();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		this.txtUpdateUsername.sendKeys(username);
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+	}
+	
+	public void updateData(String fullname, String telephone, String userActive, String username) {
+		if(!fullname.equals("")) {
+			updateFullName(fullname);
+		}
+		
+		if(!telephone.equals("")) {
+			updateTelephone(telephone);
+		}
+		
+		if(!userActive.equals("")) {
+			updateUserActive(userActive);
+		}
+		
+		if(!username.equals("")) {
+			updateUsername(username);
+		}
+	}
+	
+	
 	
 	//Click method
 	public void clickBtnUserManagement() {
@@ -291,7 +385,6 @@ public class AdminPage extends LoginPage{
 	}
 	
 
-	
 	public void clickTelephone(String telephone) {
 		this.txtAddTelephone.clear();
 		this.txtAddTelephone.sendKeys(telephone);
@@ -455,6 +548,26 @@ public class AdminPage extends LoginPage{
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 	}
 	
+	public void clickBtnOneOneHundred() {
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		btnOneOneHundred.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+	}
+	
+	public void clickBtnEditData() {
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		btnEditData.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+	}
+	public void clickBtnUpdateData() {
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		btnUpdateData.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+	}
+	
+	
+	
+	
 	//select
 	public void selectShowPageTen() {
 		dropShowPage.click();
@@ -593,6 +706,5 @@ public class AdminPage extends LoginPage{
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		return txtDoneReset.getText();
 	}
-	
 	
 }

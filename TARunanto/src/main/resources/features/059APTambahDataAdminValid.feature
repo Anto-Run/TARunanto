@@ -27,7 +27,7 @@ Feature: TSAP003 Tambah data akun admin
   #| Sebastian Phillips  |  45800210774 | Sebastian | admin123 |
   #| Kassandra Walsh     |  21128646330 | Kassandra | admin123 |
   @tag2
-  Scenario Outline: TSAP003002 Admin menyetujui menambahkan data akun admin
+  Scenario Outline: TSAP003002 Admin tidak menyetujui menambahkan data akun admin
     When TSAP003002 Admin mengisi field <fullname>, privilages, supervisor, <telephone>, <username>, <password>,
     And TSAP003002 Admin klik tombol save
     And TSAP003002 Admin klik no

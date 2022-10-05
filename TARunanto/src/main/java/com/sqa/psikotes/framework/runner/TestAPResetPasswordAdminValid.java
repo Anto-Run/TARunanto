@@ -41,7 +41,7 @@ public class TestAPResetPasswordAdminValid {
 	@When("TSAP009001 Admin klik button reset password")
 	public void tsap009001_admin_klik_button_reset_password() {
 		adminPage.clickBtnResetPassword();
-		extentTest.log(LogStatus.PASS, "Admin klik button yes");
+		extentTest.log(LogStatus.PASS, "Admin klik button reset password");
 	}
 	@When("TSAP009001 Admin klik button yes")
 	public void tsap009001_admin_klik_button_yes() {
