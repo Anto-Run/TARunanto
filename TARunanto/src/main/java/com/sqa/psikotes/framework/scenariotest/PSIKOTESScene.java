@@ -24,8 +24,8 @@ public enum PSIKOTESScene {
 	//6, 6, 6
 	
 //	
-//	R009("TSAP003001 Admin menyetujui menambahkan data akun admin"),//1
-//	R010("TSAP003002 Admin tidak menyetujui menambahkan data akun admin"),//1
+	R009("TSAP003001 Admin menyetujui menambahkan data akun admin"),//1
+	R010("TSAP003002 Admin tidak menyetujui menambahkan data akun admin"),//1
 //	//1,1
 	
 	R011("TSAP004001 Admin menampilkan10 data admin"),//1
@@ -66,7 +66,7 @@ public enum PSIKOTESScene {
 	
 	R37("TSAP008001 Admin menampilkan100 data admin pada page ke1"),
 	R38("TSAP009001 Admin mereset passwod akun admin"),
-	//1, 1
+//	//1, 1
 	
 	R39("TSAP010001 Admin mengubah satu field pada akun admin"), //4
 	R40("TSAP010002 Admin mengubah dua field pada akun admin"), //6

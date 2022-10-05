@@ -7,7 +7,7 @@ import io.cucumber.testng.CucumberOptions;
 features = {"src/main/resources/features/001LPLoginValid.feature",
 		"src/main/resources/features/051APOpenPageAdminValid.feature",
 		"src/main/resources/features/055APSearchDataAdminValid.feature",
-//		"src/main/resources/features/059APTambahDataAdminValid.feature",
+		"src/main/resources/features/059APTambahDataAdminValid.feature",
 		"src/main/resources/features/063APShowDataAdminValid.feature",
 		"src/main/resources/features/067APShow10DataAdminValid.feature",
 		"src/main/resources/features/071APShow25DataAdminValid.feature",

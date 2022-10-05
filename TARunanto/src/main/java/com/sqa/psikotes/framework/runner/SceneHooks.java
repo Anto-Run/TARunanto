@@ -34,7 +34,7 @@ public class SceneHooks {
 	private static PSIKOTESScene[] tests = PSIKOTESScene.values();
 	private static final int[] DATA_OUTLINE = {1, 1,1,1, 1, 
 												6, 6, 6, 
-//												1, 1,
+												1, 1,
 												1,1,1,1,
 												1,1,1,1,1,1,1,1,1,1,1,1,
 												1,1,1,1,1,1,

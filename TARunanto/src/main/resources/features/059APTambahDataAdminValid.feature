@@ -16,10 +16,10 @@ Feature: TSAP003 Tambah data akun admin
 
     Examples: 
       | fullname         | telephone  | username  | password |
-      | Francesca Palmer | 5677867453 | Francesca | admin123 |
+      #| Francesca Palmer | 5677867453 | Francesca | admin123 |
 
   #| David Miller        |  24772473815 | David     | admin123 |
-  #| Marissa Ingham      |  18500602384 | Marissa   | admin123 |
+  | Marissa Ingham      |  18500602384 | Marissa   | admin123 |
   #| Wade Bishop         |  15844221811 | Wade      | admin123 |
   #| Aiden Notman        |  55274164025 | Aiden     | admin123 |
   #| Tony Rowlands       |   8232713205 | Tony      | admin123 |
@@ -36,8 +36,8 @@ Feature: TSAP003 Tambah data akun admin
     Examples: 
       | fullname     | telephone   | username | password |
       #| Francesca Palmer    |   5677867453 | Francesca | admin123 |
-      | David Miller | 24772473815 | David    | admin123 |
-      #| Marissa Ingham      |  18500602384 | Marissa   | admin123 |
+      #| David Miller | 24772473815 | David    | admin123 |
+      | Marissa Ingham      |  18500602384 | Marissa   | admin123 |
       #| Wade Bishop         |  15844221811 | Wade      | admin123 |
       #| Aiden Notman        |  55274164025 | Aiden     | admin123 |
       #| Tony Rowlands       |   8232713205 | Tony      | admin123 |

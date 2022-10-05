@@ -247,6 +247,7 @@ public class AdminPage extends LoginPage{
 	}
 	
 	public void searchDataAdmin(String strSearch) {
+		this.insertSearch.clear();
 		this.insertSearch.sendKeys(strSearch);
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		

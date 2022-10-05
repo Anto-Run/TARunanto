@@ -49,38 +49,6 @@ public class TestAPEditDataAdminValid {
 		adminPage.clickBtnEditData();
 		extentTest.log(LogStatus.PASS, "Admin berhasil masuk form edit data");
 	}
-	
-	@Then("TSAP010 Admin berhasil mengubah data akun")
-	public void tsap010_admin_berhasil_mengubah_data_akun() {
-		   if(!this.isFullnameEmpty) {
-		    	adminPage.clickInSearch();
-		    	adminPage.searchDataAdmin(strUpdateFullName);
-		    	adminPage.clickBtnSearch();
-		    	assertTrue(adminPage.getTxtUsername().contains(strUpdateFullName));
-		    }
-		   
-		   if(!this.isTelephoneEmpty) {
-		    	adminPage.clickInSearch();
-		    	adminPage.searchDataAdmin(strUpdateTelephone);
-		    	adminPage.clickBtnSearch();
-		    	assertTrue(adminPage.getTxtUsername().contains(strUpdateTelephone));
-		    }
-		   
-		   if(!this.isUserActiveEmpty) {
-		    	adminPage.clickInSearch();
-		    	adminPage.searchDataAdmin(strUpdateUserActive);
-		    	adminPage.clickBtnSearch();
-		    	assertTrue(adminPage.getTxtUsername().contains(strUpdateUserActive));
-		    }
-		   if(!this.isUsernameEmpty) {
-		    	adminPage.clickInSearch();
-		    	adminPage.searchDataAdmin(strUpdateUsername);
-		    	adminPage.clickBtnSearch();
-		    	assertTrue(adminPage.getTxtUsername().contains(strUpdateUsername));
-		    }
-		   
-		   extentTest.log(LogStatus.PASS, "Admin berhasil mengubah data akun");
-	}
 
 	@When("^TSAP010001 Admin mengubah field (.*), (.*), (.*), (.*)$")
 	public void tsap010001_admin_mengubah_field_fullname_telephone_user_active_username(String fullname, String telephone, String userActive, String username) {
@@ -127,6 +95,38 @@ public class TestAPEditDataAdminValid {
 	    extentTest.log(LogStatus.PASS, "Admin klik tombol Yes");
 	    
 	}
+	
+	@Then("TSAP010001 Admin berhasil mengubah data akun")
+	public void tsap010001_admin_berhasil_mengubah_data_akun() {
+		 if(!this.isFullnameEmpty) {
+		    	adminPage.clickInSearch();
+		    	adminPage.searchDataAdmin(strUpdateFullName);
+		    	adminPage.clickBtnSearch();
+		    	assertTrue(adminPage.getTxtFullName().contains(strUpdateFullName));
+		    }
+		   
+		   if(!this.isTelephoneEmpty) {
+		    	adminPage.clickInSearch();
+		    	adminPage.searchDataAdmin(strUpdateTelephone);
+		    	adminPage.clickBtnSearch();
+		    	assertTrue(adminPage.getTxtTelephone().contains(strUpdateTelephone));
+		    }
+		   
+		   if(!this.isUserActiveEmpty) {
+		    	adminPage.clickInSearch();
+		    	adminPage.searchDataAdmin(strUpdateUserActive);
+		    	adminPage.clickBtnSearch();
+		    	assertTrue(adminPage.getTxtUserActive().contains(strUpdateUserActive));
+		    }
+		   if(!this.isUsernameEmpty) {
+		    	adminPage.clickInSearch();
+		    	adminPage.searchDataAdmin(strUpdateUsername);
+		    	adminPage.clickBtnSearch();
+		    	assertTrue(adminPage.getTxtUsername().contains(strUpdateUsername));
+		    }
+		   
+		   extentTest.log(LogStatus.PASS, "Admin berhasil mengubah data akun");
+	}
 
 
 	@When("^TSAP010002 Admin mengubah field (.*), (.*), (.*), (.*)$")
@@ -172,8 +172,39 @@ public class TestAPEditDataAdminValid {
 	    extentTest.log(LogStatus.PASS, "Admin klik tombol Yes");
 	}
 
-
-	@When("^TSAP010003 Admin mengubah (.*), (.*), (.*), (.*)$")
+	
+	@Then("TSAP010002 Admin berhasil mengubah data akun")
+	public void tsap010002_admin_berhasil_mengubah_data_akun() {
+		 if(!this.isFullnameEmpty) {
+		    	adminPage.clickInSearch();
+		    	adminPage.searchDataAdmin(strUpdateFullName);
+		    	adminPage.clickBtnSearch();
+		    	assertTrue(adminPage.getTxtFullName().contains(strUpdateFullName));
+		    }
+		   
+		   if(!this.isTelephoneEmpty) {
+		    	adminPage.clickInSearch();
+		    	adminPage.searchDataAdmin(strUpdateTelephone);
+		    	adminPage.clickBtnSearch();
+		    	assertTrue(adminPage.getTxtTelephone().contains(strUpdateTelephone));
+		    }
+		   
+		   if(!this.isUserActiveEmpty) {
+		    	adminPage.clickInSearch();
+		    	adminPage.searchDataAdmin(strUpdateUserActive);
+		    	adminPage.clickBtnSearch();
+		    	assertTrue(adminPage.getTxtUserActive().contains(strUpdateUserActive));
+		    }
+		   if(!this.isUsernameEmpty) {
+		    	adminPage.clickInSearch();
+		    	adminPage.searchDataAdmin(strUpdateUsername);
+		    	adminPage.clickBtnSearch();
+		    	assertTrue(adminPage.getTxtUsername().contains(strUpdateUsername));
+		    }
+		   extentTest.log(LogStatus.PASS, "Admin berhasil mengubah data akun");
+	}
+	
+	@When("^TSAP010003 Admin mengubah field (.*), (.*), (.*), (.*)$")
 	public void tsap010003_admin_mengubah_field_fullname_telephone_user_active_username(String fullname, String telephone, String userActive, String username) {
 	    if(!fullname.equals("")) {
 	    	this.isFullnameEmpty = false;
@@ -203,6 +234,7 @@ public class TestAPEditDataAdminValid {
 		
 		extentTest.log(LogStatus.PASS, "Admin mengubah tiga isi field");
 	}
+	
 
 	@When("TSAP010003 Admin klik update")
 	public void tsap010003_admin_klik_update() {
@@ -216,8 +248,41 @@ public class TestAPEditDataAdminValid {
 		    extentTest.log(LogStatus.PASS, "Admin klik tombol Yes");
 	}
 
+	
+	
+	@Then("TSAP010003 Admin berhasil mengubah data akun")
+	public void tsap010003_admin_berhasil_mengubah_data_akun() {
+		 if(!this.isFullnameEmpty) {
+		    	adminPage.clickInSearch();
+		    	adminPage.searchDataAdmin(strUpdateFullName);
+		    	adminPage.clickBtnSearch();
+		    	assertTrue(adminPage.getTxtFullName().contains(strUpdateFullName));
+		    }
+		   
+		   if(!this.isTelephoneEmpty) {
+		    	adminPage.clickInSearch();
+		    	adminPage.searchDataAdmin(strUpdateTelephone);
+		    	adminPage.clickBtnSearch();
+		    	assertTrue(adminPage.getTxtTelephone().contains(strUpdateTelephone));
+		    }
+		   
+		   if(!this.isUserActiveEmpty) {
+		    	adminPage.clickInSearch();
+		    	adminPage.searchDataAdmin(strUpdateUserActive);
+		    	adminPage.clickBtnSearch();
+		    	assertTrue(adminPage.getTxtUserActive().contains(strUpdateUserActive));
+		    }
+		   if(!this.isUsernameEmpty) {
+		    	adminPage.clickInSearch();
+		    	adminPage.searchDataAdmin(strUpdateUsername);
+		    	adminPage.clickBtnSearch();
+		    	assertTrue(adminPage.getTxtUsername().contains(strUpdateUsername));
+		    }
+		   
+		   extentTest.log(LogStatus.PASS, "Admin berhasil mengubah data akun");
+	}
 
-	@When("^TSAP010004 Admin mengubah (.*), (.*), (.*), (.*)$")
+	@When("^TSAP010004 Admin mengubah field (.*), (.*), (.*), (.*)$")
 	public void tsap010004_admin_mengubah_field_fullname_telephone_user_active_username(String fullname, String telephone, String userActive, String username) {
 	    if(!fullname.equals("")) {
 	    	this.isFullnameEmpty = false;
@@ -261,6 +326,37 @@ public class TestAPEditDataAdminValid {
 	}
 
 
-
+	
+	@Then("TSAP010004 Admin berhasil mengubah data akun")
+	public void tsap010004_admin_berhasil_mengubah_data_akun() {
+		 if(!this.isFullnameEmpty) {
+		    	adminPage.clickInSearch();
+		    	adminPage.searchDataAdmin(strUpdateFullName);
+		    	adminPage.clickBtnSearch();
+		    	assertTrue(adminPage.getTxtFullName().contains(strUpdateFullName));
+		    }
+		   
+		   if(!this.isTelephoneEmpty) {
+		    	adminPage.clickInSearch();
+		    	adminPage.searchDataAdmin(strUpdateTelephone);
+		    	adminPage.clickBtnSearch();
+		    	assertTrue(adminPage.getTxtTelephone().contains(strUpdateTelephone));
+		    }
+		   
+		   if(!this.isUserActiveEmpty) {
+		    	adminPage.clickInSearch();
+		    	adminPage.searchDataAdmin(strUpdateUserActive);
+		    	adminPage.clickBtnSearch();
+		    	assertTrue(adminPage.getTxtUserActive().contains(strUpdateUserActive));
+		    }
+		   if(!this.isUsernameEmpty) {
+		    	adminPage.clickInSearch();
+		    	adminPage.searchDataAdmin(strUpdateUsername);
+		    	adminPage.clickBtnSearch();
+		    	assertTrue(adminPage.getTxtUsername().contains(strUpdateUsername));
+		    }
+		   
+		   extentTest.log(LogStatus.PASS, "Admin berhasil mengubah data akun");
+	}
 
 }
