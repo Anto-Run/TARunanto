@@ -333,7 +333,7 @@ public class ModulPage extends LoginPage {
 	}
 	
 	public void clickBtnUpdateModul() {
-		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+	//	Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		btnUpdateModul.click();
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 	}
@@ -621,7 +621,7 @@ public class ModulPage extends LoginPage {
 	}
 	
 	public void updateKategoriModul(String kategori) {
-		fEditKategori.click();
+	//	fEditKategori.click();
 		new Select(fEditKategori).selectByVisibleText(kategori);
 		
 	}

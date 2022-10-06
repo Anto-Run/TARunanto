@@ -16,7 +16,7 @@ Feature: TSMP018 Admin Edit Data Modul
     #Data ubah dua field (20 Data)
     Examples: 
       | nama          | tipe_modul     | waktu_pengerjaan | jumlah_soal | kategori | deskripsi      | status_modul |
-      | psikotestCoba | PILIHAN GANDA  |                  |             |          |                |              |
+      | psikotestCoba | PILIHAN GANDA  |                  |             |          |                |             |
       | psikotestCoba |                |              100 |             |          |                |              |
       | psikotestCoba |                |                  |         100 |          |                |              |
       | psikotestCoba |                |                  |             | LEADER   |                |              |
@@ -43,7 +43,7 @@ Feature: TSMP018 Admin Edit Data Modul
     And TSMP018002 Admin klik tombol update
     And TSMP018002 Data modul berhasil diedit
 
-    #Data ubah tiga field (14 Data)
+   # Data ubah tiga field (14 Data)
     Examples: 
       | nama          | tipe_modul     | waktu_pengerjaan | jumlah_soal | kategori | deskripsi      | status_modul |
       | psikotestCoba | PILIHAN GANDA  |              100 |             |          |                |              |
@@ -103,7 +103,7 @@ Feature: TSMP018 Admin Edit Data Modul
     And TSMP018005 Admin klik tombol update
     And TSMP018005 Data modul berhasil diedit
 
-    #Data ubah enam field (3 Data)
+   #Data ubah enam field (3 Data)
     Examples: 
       | nama          | tipe_modul     | waktu_pengerjaan | jumlah_soal | kategori | deskripsi      | status_modul |
       | psikotestCoba | ESAI FREE TEXT |               90 |             | STAFF    | Deskripsi ubah | ACTIVE       |

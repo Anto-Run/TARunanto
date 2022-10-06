@@ -16,13 +16,13 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class TestAdminPageValid {
+public class TestAPAdminPageValid {
 	
 	private static WebDriver driver;
 	private static ExtentTest extentTest;
 	private AdminPage adminPage = new AdminPage();
 	
-	public TestAdminPageValid() {
+	public TestAPAdminPageValid() {
 		driver = SceneHooks.driver;
 		extentTest = SceneHooks.extentTest;
 	}
@@ -32,6 +32,7 @@ public class TestAdminPageValid {
 	public void tsap001001_admin_berhasil_masuk_halaman_utama_web() {
 		driver.get(Constants.URL);
 		adminPage.clickOk();
+		extentTest.log(LogStatus.PASS, "Admin berhasil masuk halaman utama web");
 	}
 
 	@When("TSAP001001 Admin klik Menu User Management")

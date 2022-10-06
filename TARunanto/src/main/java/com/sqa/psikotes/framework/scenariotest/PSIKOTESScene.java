@@ -32,8 +32,8 @@ public enum PSIKOTESScene {
 	R012("TSAP004002 Admin menampilkan25 data admin"), //1
 	R013("TSAP004003 Admin menampilkan50 data admin"), //1
 	R014("TSAP004004 Admin menampilkan100 data admin"),//1
-	//1,1,1,1
-//	
+//	//1,1,1,1
+////	
 	R015("TSAP005001 Admin menampilkan10 data  admin pada page ke1"),//1
 	R016("TSAP005002 Admin menampilkan10 data  admin pada page ke2"),//1
 	R017("TSAP005003 Admin menampilkan10 data  admin pada page ke3"), //1
@@ -54,10 +54,10 @@ public enum PSIKOTESScene {
 	R030("TSAP006004 Admin menampilkan25 data admin pada page ke4"), //1
 	R031("TSAP006005 Admin menampilkan25 data admin pada page paling awal"), //1
 	R032("TSAP006006 Admin menampilkan25 data admin pada page paling terakhir"), //1
-////	
-////	//1,1,1,1,1,1
-////	
-////	
+//////	
+//////	//1,1,1,1,1,1
+//////	
+//////	
 	R033("TSAP007001 Admin menampilkan50 data admin pada page ke1"),//1
 	R034("TSAP007002 Admin menampilkan50 data admin pada page ke2"), //1
 	R035("TSAP007003 Admin menampilkan50 data admin pada page >>"), //1
@@ -72,38 +72,51 @@ public enum PSIKOTESScene {
 	R40("TSAP010002 Admin mengubah dua field pada akun admin"), //6
 	R41("TSAP010003 Admin mengubah tiga field pada akun admin"), //3
 	R42("TSAP010004 Admin mengubah semua field pada akun admin"), //1
-	//4,6,3,1
+//	//4,6,3,1
 	
-	
-	A006("TSMP004001 Admin menampilkan10 data modul pada page ke1"),//1
-	A007("TSMP004002 Admin menampilkan10 data modul pada page ke2"),//1
-	A008("TSMP004003 Admin menampilkan10 data modul pada page ke3"),//1
-	A009("TSMP004004 Admin menampilkan10 data modul pada page ke4"),//1
-	A010("TSMP004005 Admin menampilkan10 data modul pada page ke5"),//1
-	A011("TSMP004006 Admin menampilkan10 data modul pada page paling terakhir"),//1
-	A012("TSMP004007 Admin menampilkan10 data modul pada page paling awal"),//1
-//	//{1,1,1,1,1,1,1}
-	
-	A013("TSMP005001 Admin menampilkan25 data modul pada page ke1"),//1
-	A014("TSMP005002 Admin menampilkan25 data modul pada page terakhir"),//1
-	A015("TSMP005003 Admin menampilkan25 data modul pada page ke2"),//1
-	A016("TSMP005004 Admin menampilkan25 data modul pada page pertama"),//1
-//	1,1,1,1
-	
-	A017("TSMP006001 Admin menampilkan50 data modul"),//1
-	A018("TSMP006002 Admin menampilkan50 data modul pada page ke1"),//1
-//	1,1
-	
-	A019("TSMP008001 Admin menampilkan100 data modul"),//1
-	A020("TSMP006002 Admin menampilkan100 data modul pada page ke1"),//1
+	R43("TSAP011001 Admin tidak menyetujui edit password"), //3
+	R44("TSAP011002 Admin menyetujui edit password"), //3
+	//3,3
+//	
+//	
+//	A006("TSMP004001 Admin menampilkan10 data modul pada page ke1"),//1
+//	A007("TSMP004002 Admin menampilkan10 data modul pada page ke2"),//1
+//	A008("TSMP004003 Admin menampilkan10 data modul pada page ke3"),//1
+//	A009("TSMP004004 Admin menampilkan10 data modul pada page ke4"),//1
+//	A010("TSMP004005 Admin menampilkan10 data modul pada page ke5"),//1
+//	A011("TSMP004006 Admin menampilkan10 data modul pada page paling terakhir"),//1
+//	A012("TSMP004007 Admin menampilkan10 data modul pada page paling awal"),//1
+////	//{1,1,1,1,1,1,1}
+//	
+//	A013("TSMP005001 Admin menampilkan25 data modul pada page ke1"),//1
+//	A014("TSMP005002 Admin menampilkan25 data modul pada page terakhir"),//1
+//	A015("TSMP005003 Admin menampilkan25 data modul pada page ke2"),//1
+//	A016("TSMP005004 Admin menampilkan25 data modul pada page pertama"),//1
+////	1,1,1,1
+//	
+//	A017("TSMP006001 Admin menampilkan50 data modul"),//1
+//	A018("TSMP006002 Admin menampilkan50 data modul pada page ke1"),//1
+////	1,1
+//	
+//	A019("TSMP008001 Admin menampilkan100 data modul"),//1
+//	A020("TSMP006002 Admin menampilkan100 data modul pada page ke1"),//1
 	//1,1
 	
-	A021("TSMP018001 Admin edit dua field data modul"),
-	A022("TSMP018002 Admin edit tiga field  data modul"),
-	A023("TSMP018003 Admin edit empat field  data modull"),
-	A024("TSMP018004 Admin edit lima field data modul"),
-	A025("TSMP018005 Admin edit enam field data modul"),
-	A026("TSMP018006 Admin edit tujuh field data modul");
+	A021("TSMP018001 Admin edit dua field data modul"), //20
+	A022("TSMP018002 Admin edit tiga field  data modul"), //14
+	A023("TSMP018003 Admin edit empat field  data modull"), //10
+	A024("TSMP018004 Admin edit lima field data modul"), //6
+	A025("TSMP018005 Admin edit enam field data modul"), //3
+	A026("TSMP018006 Admin edit tujuh field data modul"), //1
+	//20, 14, 10, 6, 3,1
+	//
+	
+	
+	
+	R670("TSLO002001N Admin membatalkan logout dari website"),
+	R671("TSLO002002N Admin membatalkan logout dari website"),
+	R672("TSLO002002 Admin berhasil logout dari website");
+	//1,1,1
 	
 	
 	private String testName;

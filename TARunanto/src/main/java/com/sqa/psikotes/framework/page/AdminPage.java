@@ -58,12 +58,33 @@ public class AdminPage extends LoginPage{
 	
 	@FindBy(xpath="//tr[10]/td[11]/div/table/tbody/tr/td/div/img")
 	private WebElement btnEditData;
-	
+
 	@FindBy(xpath="//span[normalize-space()='Reset Password']")
 	private WebElement btnResetPassword;
 	
 	@FindBy(xpath="//button[@id='51743_query']/span")
 	private WebElement btnUpdateData;
+	
+	
+	@FindBy(xpath="//button[@id='51748_query']/span")
+	private WebElement btnUpdatePassword;
+	
+	@FindBy(xpath="//button[@id='51753_query']/span")
+	private WebElement btnUpdatePasswordDone;
+	
+	@FindBy(xpath="//tbody/tr[@class='nikitahorizontallayout-div']/td[1]/div[1]/img[1]")
+	private WebElement btnEditPassword;
+	
+	@FindBy(xpath="//div[10]/div/div/button/span")
+	private WebElement btnXUpdatePassword;
+	
+	@FindBy(xpath="//div[9]/div/div/button/span")
+	private WebElement btnXUpdateDataAdmin;
+
+	@FindBy(xpath="//td[2]/div/img")
+	private WebElement btnDeleteAdmin;
+	
+	
 	
 	/*
 	 * Button Page
@@ -118,8 +139,6 @@ public class AdminPage extends LoginPage{
 	
 
 	
-	
-	
 
 	/*
 	 * Checkbox
@@ -166,6 +185,12 @@ public class AdminPage extends LoginPage{
 	private WebElement txtUpdateUsername;
 	
 	
+	/*
+	 * Txt Update Password
+	 */
+	
+	@FindBy(id="tl_agent_edit_pass-1000-51754_text")
+	private WebElement txtUpdatePassword;
 	
 	
 	
@@ -232,9 +257,18 @@ public class AdminPage extends LoginPage{
 	@FindBy(xpath="//div[@id='nikita-form-dialog']/p")
 	private WebElement txtDoneReset;
 	
+	@FindBy(xpath="//p[normalize-space()='Password Berhasil di Update']")
+	private WebElement txtDoneUpdatePassword;
+	
+	@FindBy(xpath="//p[normalize-space()='Update di batalkan']")
+	private WebElement txtUpdatePasswordGagal;
+	
+
+	
 	//Validation (button)
 	@FindBy(xpath="//td[@id='tl_user_management--51688-cell-0-0']")
 	private WebElement btnDataFirst;
+	
 
 	
 	
@@ -330,6 +364,12 @@ public class AdminPage extends LoginPage{
 		}
 	}
 	
+	public void updateTxtPassword(String password) {
+		txtUpdatePassword.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		txtUpdatePassword.sendKeys(password);
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+	}
 	
 	
 	//Click method
@@ -405,7 +445,7 @@ public class AdminPage extends LoginPage{
 	}
 	
 	public void clickBtnYes() {
-		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+//		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		btnYes.click();
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 	}
@@ -416,45 +456,45 @@ public class AdminPage extends LoginPage{
 	}
 	
 	public void clickBtnPOne() {
-		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+//		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		btnPOne.click();
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 	}
 	
 	
 	public void clickBtnPTwo() {
-		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+//		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		btnPTwo.click();
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 	}
 	
 
 	public void clickBtnPThree() {
-		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+//		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		btnPThree.click();
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 	}
 	
 	public void clickBtnPFour() {
-		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+//		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		btnPFour.click();
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 	}
 	
 	public void clickBtnPFive() {
-		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+//		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		btnPFive.click();
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 	}
 	
 	public void clickBtnPSix() {
-		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+//		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		btnPSix.click();
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 	}
 	
 	public void clickBtnPSeven() {
-		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+//		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		btnNext.click();
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		btnPSeven.click();
@@ -462,7 +502,7 @@ public class AdminPage extends LoginPage{
 	}
 	
 	public void clickBtnPEight() {
-		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+//		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		btnNext.click();
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		btnPEight.click();
@@ -470,7 +510,7 @@ public class AdminPage extends LoginPage{
 	}
 	
 	public void clickBtnPNine() {
-		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+//		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		btnNext.click();
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		btnPNine.click();
@@ -478,7 +518,7 @@ public class AdminPage extends LoginPage{
 	}
 	
 	public void clickBtnPTen() {
-		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+//		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		btnNext.click();
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		btnPTen.click();
@@ -488,13 +528,13 @@ public class AdminPage extends LoginPage{
 	
 	
 	public void clickBtnNextTen() {
-		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+//		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		btnNext.click();
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 	}
 	
 	public void clickBtnPrevTen() {
-		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+//		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		btnNext.click();
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		btnPrev.click();
@@ -502,13 +542,13 @@ public class AdminPage extends LoginPage{
 	}
 	
 	public void clickBtnNextTwentyFive() {
-		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+//		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		btnNextTwentyFive.click();
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 	}
 	
 	public void clickBtnPrevTwentyFive() {
-		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+//		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		btnNextTwentyFive.click();
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		btnPrev.click();
@@ -517,13 +557,13 @@ public class AdminPage extends LoginPage{
 	}
 	
 	public void clickBtnNextFifty() {
-		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+//		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		btnNextFifty.click();
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 	}
 	
 	public void clickBtnPrevFifty() {
-		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+//		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		btnNextFifty.click();
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		btnPrev.click();
@@ -532,43 +572,71 @@ public class AdminPage extends LoginPage{
 	}
 	
 	public void clickCheckPassword() {
-		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+//		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		checkDataAdmin.click();
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 	}
 	
 	public void clickBtnResetPassword() {
-		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+//		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		btnResetPassword.click();
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 	}
 	
 	public void clickBtnYesReset() {
-		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+//		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		btnYesReset.click();
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 	}
 	
 	public void clickBtnOneOneHundred() {
-		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+//		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		btnOneOneHundred.click();
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 	}
 	
 	public void clickBtnEditData() {
-		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+//		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		btnEditData.click();
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 	}
 	public void clickBtnUpdateData() {
-		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+//		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		btnUpdateData.click();
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 	}
 	
+	public void clickBtnUpdatePassword() {
+//		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		btnUpdatePassword.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+	}
 	
+	public void clickBtnUpdatePasswordDone() {
+		btnUpdatePasswordDone.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		
+	}
+	public void clickBtnEditPassword() {
+		btnEditPassword.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+	}
 	
+
+	public void clickBtnXUpdatePassword() {
+		btnXUpdatePassword.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+	}
 	
+	public void clickBtnXUpdateDataAdmin() {
+		btnXUpdateDataAdmin.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+	}
+	
+	public void clickBtnDeleteDataAdmin() {
+		btnDeleteAdmin.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+	}
 	//select
 	public void selectShowPageTen() {
 		dropShowPage.click();
@@ -707,5 +775,22 @@ public class AdminPage extends LoginPage{
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		return txtDoneReset.getText();
 	}
+	
+	public String getTxtUpdatePasswordDone() {
+		Utils.driverWaitTxt(driver, Constants.TIMEOUT, txtDoneUpdatePassword);
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		return txtDoneUpdatePassword.getText();
+	}
+	
+	public String getTxtUpdatePasswordGagal() {
+		Utils.driverWaitTxt(driver, Constants.TIMEOUT, txtUpdatePasswordGagal);
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		return txtUpdatePasswordGagal.getText();
+	}
+	
+	
+	
+	
+
 	
 }
