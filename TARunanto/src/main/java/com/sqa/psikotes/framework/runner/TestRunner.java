@@ -14,7 +14,14 @@ features = {"src/main/resources/features/001LPLoginValid.feature",
 		"src/main/resources/features/074APShow50DataAdminValid.feature",
 		"src/main/resources/features/077APShow100DataAdminValid.feature",
 		"src/main/resources/features/081APResetPasswordValid.feature",
-		"src/main/resources/features/084APEditDataAdminValid.feature"
+		"src/main/resources/features/084APEditDataAdminValid.feature",
+		
+		
+		"src/main/resources/features/185MPShow10DataValid.feature",
+		"src/main/resources/features/188MPShow25DataValid.feature",
+		"src/main/resources/features/191MPShow50DataValid.feature",
+		"src/main/resources/features/197MPShow100DataValid.feature",
+		"src/main/resources/features/227MPEditDataModulValid.feature",
 		
 		},
 glue = "com.sqa.psikotes.framework.runner",

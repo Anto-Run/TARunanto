@@ -71,6 +71,7 @@ public class TestAPEditDataAdminValid {
 	    /*
 	     * Update data
 	     */
+
 	    strUpdateFullName = fullname;
 	    strUpdateTelephone = telephone;
 	    strUpdateUserActive = userActive;
@@ -303,6 +304,7 @@ public class TestAPEditDataAdminValid {
 	    /*
 	     * Update data
 	     */
+	    
 	    strUpdateFullName = fullname;
 	    strUpdateTelephone = telephone;
 	    strUpdateUserActive = userActive;

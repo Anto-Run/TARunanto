@@ -40,7 +40,11 @@ public class SceneHooks {
 												1,1,1,1,1,1,
 												1, 1, 1, 1, 1, 
 												1,1,
-												4,6,3,1};
+												4,6,3,1,
+												
+												1,1,1,1,1,1,1,       1,1,1,1,   1,1, 1,1,
+			20, 14, 10, 6, 3, 1
+	};
 	private String testReport = "";	
 	@Before
 	public void setUp() {
