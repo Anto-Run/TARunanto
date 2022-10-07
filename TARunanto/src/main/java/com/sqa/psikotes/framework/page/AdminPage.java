@@ -53,6 +53,7 @@ public class AdminPage extends LoginPage{
 	@FindBy(xpath="(.//*[normalize-space(text()) and normalize-space(.)='Close'])[1]/following::span[2]")
 	private WebElement btnNo;
 	
+	
 	@FindBy(xpath="(.//*[normalize-space(text()) and normalize-space(.)='NO'])[1]/following::span[1]")
 	private WebElement btnYesReset;
 	
@@ -83,6 +84,12 @@ public class AdminPage extends LoginPage{
 
 	@FindBy(xpath="//td[2]/div/img")
 	private WebElement btnDeleteAdmin;
+	
+	@FindBy(xpath="(.//*[normalize-space(text()) and normalize-space(.)='Tidak'])[1]/following::span[1]")
+	private WebElement btnYesDelete;
+	
+	@FindBy(linkText="DONE")
+	private WebElement btnCloseResetPassword;
 	
 	
 	
@@ -136,14 +143,14 @@ public class AdminPage extends LoginPage{
 	
 	@FindBy(xpath="//div[4]//ul[1]//li[2]//a[1]")
 	private WebElement btnOneOneHundred;
-	
+
 
 	
 
 	/*
 	 * Checkbox
 	 */
-	@FindBy(xpath="//tbody/tr[10]/td[1]/input[1]")
+	@FindBy(name="tl_user_management--51688_text")
 	private WebElement checkDataAdmin;
 	
 	/*
@@ -250,6 +257,8 @@ public class AdminPage extends LoginPage{
 	@FindBy(xpath="//td[@id='tl_user_management--51688-cell-0-8']")
 	private WebElement txtUserActive;
 	
+	@FindBy(xpath="//div[@id='nikita-form-dialog']/p")
+	private WebElement txtAddFailed;
 	
 	@FindBy(xpath="//th[normalize-space()='User Name']")
 	private WebElement txtNotFound;
@@ -263,7 +272,8 @@ public class AdminPage extends LoginPage{
 	@FindBy(xpath="//p[normalize-space()='Update di batalkan']")
 	private WebElement txtUpdatePasswordGagal;
 	
-
+	@FindBy(xpath="//div[@id='tl_user_management--51688']/div[8]")
+	private WebElement txtShowData;
 	
 	//Validation (button)
 	@FindBy(xpath="//td[@id='tl_user_management--51688-cell-0-0']")
@@ -596,7 +606,6 @@ public class AdminPage extends LoginPage{
 	}
 	
 	public void clickBtnEditData() {
-//		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 		btnEditData.click();
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 	}
@@ -637,6 +646,19 @@ public class AdminPage extends LoginPage{
 		btnDeleteAdmin.click();
 		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
 	}
+	
+	public void clickBtnYesDelete() {
+		btnYesDelete.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+	}
+	
+	public void clickBtnCloseResetPassword() {
+		btnCloseResetPassword.click();
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+	}
+	
+
+	
 	//select
 	public void selectShowPageTen() {
 		dropShowPage.click();
@@ -788,7 +810,17 @@ public class AdminPage extends LoginPage{
 		return txtUpdatePasswordGagal.getText();
 	}
 	
+	public String getTxtShowData() {
+		Utils.driverWaitTxt(driver, Constants.TIMEOUT, txtShowData);
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		return txtShowData.getText();
+	}
 	
+	public String getTxtAddFailed() {
+		Utils.driverWaitTxt(driver, Constants.TIMEOUT, txtAddFailed);
+		Utils.delay(1, Constants.GLOB_PARAM_DELAY);
+		return txtAddFailed.getText();
+	}
 	
 	
 

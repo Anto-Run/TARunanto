@@ -30,6 +30,9 @@ public class TestAPResetPasswordAdminValid {
 		driver.get(Constants.URL);
 		adminPage.clickOk();
 		adminPage.adminPage();
+		adminPage.clickInSearch();
+		adminPage.searchDataAdmin("Bagas41");
+		adminPage.clickBtnSearch();
 		extentTest.log(LogStatus.PASS, "Admin berhasil masuk halaman menu admin");
 	}
 
@@ -52,8 +55,16 @@ public class TestAPResetPasswordAdminValid {
 	@Then("TSAP009001 Admin berhasil reset password berdasarkan akun admin yang akan direset")
 	public void tsap009001_admin_berhasil_reset_password_berdasarkan_akun_admin_yang_akan_direset() {
 		String strDoneReset = "PASSWORD";
+		String strExpectedLogin = "PSIKOTES";
 		assertTrue(adminPage.getTxtDoneReset().contains(strDoneReset));
+		driver.get(Constants.URL);
+		adminPage.clickOk();
+		adminPage.logout();
+		adminPage.loginValidTwo("Bagas41", "1");
 		extentTest.log(LogStatus.PASS, "Admin berhasil reset password berdasarkan akun admin yang akan direset");
+		assertTrue(adminPage.getTxtPsikotesAdmin().contains(strExpectedLogin));
+		adminPage.logout();
+		adminPage.loginValidTwo(Constants.USERNAME_LOGIN, Constants.PASSWORD_LOGIN);
 		
 	}
 
