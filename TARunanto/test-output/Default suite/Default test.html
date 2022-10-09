@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>78/16/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>90/4/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Oct 07 14:45:19 WIB 2022</td>
+<td>Started on:</td><td>Fri Oct 07 15:32:27 WIB 2022</td>
 </tr>
-<tr><td>Total time:</td><td>1519 seconds (1519297 ms)</td>
+<tr><td>Total time:</td><td>1480 seconds (1480222 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,94 +76,6 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP002002 Admin mencari data dengan  tombol enter (green button)", "TSAP002 Admin Search Data"</td>
-<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertTrue(Assert.java:56)
-	at org.testng.Assert.assertTrue(Assert.java:66)
-	at com.sqa.psikotes.framework.runner.TestAPSearchDataAdminValid.tsap002002_admin_berhasil_mencari_data_two_yang_dicari(TestAPSearchDataAdminValid.java:91)
-	at ✽.TSAP002002 Admin berhasil mencari 4251768538 yang dicari(file:///C:/Users/NEXSOFT/git/TARunanto/TARunanto/src/main/resources/features/055APSearchDataAdminValid.feature:29)
-</pre></div><a href='#' onClick='toggleBox("stack-trace894780981", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace894780981'><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertTrue(Assert.java:56)
-	at org.testng.Assert.assertTrue(Assert.java:66)
-	at com.sqa.psikotes.framework.runner.TestAPSearchDataAdminValid.tsap002002_admin_berhasil_mencari_data_two_yang_dicari(TestAPSearchDataAdminValid.java:91)
-	at ✽.TSAP002002 Admin berhasil mencari 4251768538 yang dicari(file:///C:/Users/NEXSOFT/git/TARunanto/TARunanto/src/main/resources/features/055APSearchDataAdminValid.feature:29)
-</pre></div></td>
-<td>8</td>
-<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
-<tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP012001 Admin batal menghapus data", "TSAP012 Admin menghapus data"</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//td[2]/div/img&quot;}
-  (Session info: chrome=106.0.5249.103)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
-System info: host: &apos;LAPTOP-ASKQ9BMM&apos;, ip: &apos;10.0.0.250&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e1accc8d0228df20bb517d9ead555577, findElement {using=xpath, value=//td[2]/div/img}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.103, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\NEXSOFT\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:55893}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55893/devtoo..., se:cdpVersion: 106.0.5249.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: e1accc8d0228df20bb517d9ead555577
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy31.click(Unknown Source)
-	at com.sqa.psikotes.framework.page.AdminPage.clickBtnDeleteDataAdmin(AdminPage.java:646)
-	at com.sqa.psikotes.framework.runner.TestAPHapusDataAdmin.tsap012001_admin_klik_tombol_hapus_data(TestAPHapusDataAdmin.java:41)
-	at ✽.TSAP012001 Admin klik tombol hapus data(file:///C:/Users/NEXSOFT/git/TARunanto/TARunanto/src/main/resources/features/091APHapusDataAdmin.feature:10)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1333217812", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1333217812'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//td[2]/div/img&quot;}
-  (Session info: chrome=106.0.5249.103)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
-System info: host: &apos;LAPTOP-ASKQ9BMM&apos;, ip: &apos;10.0.0.250&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e1accc8d0228df20bb517d9ead555577, findElement {using=xpath, value=//td[2]/div/img}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.103, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\NEXSOFT\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:55893}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55893/devtoo..., se:cdpVersion: 106.0.5249.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: e1accc8d0228df20bb517d9ead555577
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy31.click(Unknown Source)
-	at com.sqa.psikotes.framework.page.AdminPage.clickBtnDeleteDataAdmin(AdminPage.java:646)
-	at com.sqa.psikotes.framework.runner.TestAPHapusDataAdmin.tsap012001_admin_klik_tombol_hapus_data(TestAPHapusDataAdmin.java:41)
-	at ✽.TSAP012001 Admin klik tombol hapus data(file:///C:/Users/NEXSOFT/git/TARunanto/TARunanto/src/main/resources/features/091APHapusDataAdmin.feature:10)
-</pre></div></td>
-<td>37</td>
-<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
-<tr>
 <td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP012002 Admin berhasil menghapus data", "TSAP012 Admin menghapus data"</td>
 <td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//td[2]/div/img&quot;}
   (Session info: chrome=106.0.5249.103)
@@ -171,9 +83,9 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
 System info: host: &apos;LAPTOP-ASKQ9BMM&apos;, ip: &apos;10.0.0.250&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e1accc8d0228df20bb517d9ead555577, findElement {using=xpath, value=//td[2]/div/img}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.103, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\NEXSOFT\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:55893}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55893/devtoo..., se:cdpVersion: 106.0.5249.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: e1accc8d0228df20bb517d9ead555577
+Command: [53b43f3dcae921f643ce3d3a88449cc9, findElement {using=xpath, value=//td[2]/div/img}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.103, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\NEXSOFT\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57895}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57895/devtoo..., se:cdpVersion: 106.0.5249.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 53b43f3dcae921f643ce3d3a88449cc9
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -196,16 +108,16 @@ Session ID: e1accc8d0228df20bb517d9ead555577
 	at com.sqa.psikotes.framework.page.AdminPage.clickBtnDeleteDataAdmin(AdminPage.java:646)
 	at com.sqa.psikotes.framework.runner.TestAPHapusDataAdmin.tsap012002_admin_klik_tombol_hapus_data(TestAPHapusDataAdmin.java:62)
 	at ✽.TSAP012002 Admin klik tombol hapus data(file:///C:/Users/NEXSOFT/git/TARunanto/TARunanto/src/main/resources/features/091APHapusDataAdmin.feature:15)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1094528318", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1094528318'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//td[2]/div/img&quot;}
+</pre></div><a href='#' onClick='toggleBox("stack-trace187123764", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace187123764'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//td[2]/div/img&quot;}
   (Session info: chrome=106.0.5249.103)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
 System info: host: &apos;LAPTOP-ASKQ9BMM&apos;, ip: &apos;10.0.0.250&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e1accc8d0228df20bb517d9ead555577, findElement {using=xpath, value=//td[2]/div/img}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.103, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\NEXSOFT\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:55893}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55893/devtoo..., se:cdpVersion: 106.0.5249.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: e1accc8d0228df20bb517d9ead555577
+Command: [53b43f3dcae921f643ce3d3a88449cc9, findElement {using=xpath, value=//td[2]/div/img}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.103, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\NEXSOFT\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57895}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57895/devtoo..., se:cdpVersion: 106.0.5249.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 53b43f3dcae921f643ce3d3a88449cc9
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -232,44 +144,72 @@ Session ID: e1accc8d0228df20bb517d9ead555577
 <td>38</td>
 <td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
 <tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP002002 Admin mencari data dengan  tombol enter (green button)", "TSAP002 Admin Search Data"</td>
-<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertTrue(Assert.java:56)
-	at org.testng.Assert.assertTrue(Assert.java:66)
-	at com.sqa.psikotes.framework.runner.TestAPSearchDataAdminValid.tsap002002_admin_berhasil_mencari_data_two_yang_dicari(TestAPSearchDataAdminValid.java:89)
-	at ✽.TSAP002002 Admin berhasil mencari DEVELOPER yang dicari(file:///C:/Users/NEXSOFT/git/TARunanto/TARunanto/src/main/resources/features/055APSearchDataAdminValid.feature:29)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1340995848", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1340995848'><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertTrue(Assert.java:56)
-	at org.testng.Assert.assertTrue(Assert.java:66)
-	at com.sqa.psikotes.framework.runner.TestAPSearchDataAdminValid.tsap002002_admin_berhasil_mencari_data_two_yang_dicari(TestAPSearchDataAdminValid.java:89)
-	at ✽.TSAP002002 Admin berhasil mencari DEVELOPER yang dicari(file:///C:/Users/NEXSOFT/git/TARunanto/TARunanto/src/main/resources/features/055APSearchDataAdminValid.feature:29)
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP012001 Admin batal menghapus data", "TSAP012 Admin menghapus data"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//td[2]/div/img&quot;}
+  (Session info: chrome=106.0.5249.103)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;LAPTOP-ASKQ9BMM&apos;, ip: &apos;10.0.0.250&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [53b43f3dcae921f643ce3d3a88449cc9, findElement {using=xpath, value=//td[2]/div/img}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.103, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\NEXSOFT\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57895}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57895/devtoo..., se:cdpVersion: 106.0.5249.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 53b43f3dcae921f643ce3d3a88449cc9
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.click(Unknown Source)
+	at com.sqa.psikotes.framework.page.AdminPage.clickBtnDeleteDataAdmin(AdminPage.java:646)
+	at com.sqa.psikotes.framework.runner.TestAPHapusDataAdmin.tsap012001_admin_klik_tombol_hapus_data(TestAPHapusDataAdmin.java:41)
+	at ✽.TSAP012001 Admin klik tombol hapus data(file:///C:/Users/NEXSOFT/git/TARunanto/TARunanto/src/main/resources/features/091APHapusDataAdmin.feature:10)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1981974826", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1981974826'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//td[2]/div/img&quot;}
+  (Session info: chrome=106.0.5249.103)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;LAPTOP-ASKQ9BMM&apos;, ip: &apos;10.0.0.250&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [53b43f3dcae921f643ce3d3a88449cc9, findElement {using=xpath, value=//td[2]/div/img}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.103, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\NEXSOFT\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57895}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57895/devtoo..., se:cdpVersion: 106.0.5249.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 53b43f3dcae921f643ce3d3a88449cc9
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.click(Unknown Source)
+	at com.sqa.psikotes.framework.page.AdminPage.clickBtnDeleteDataAdmin(AdminPage.java:646)
+	at com.sqa.psikotes.framework.runner.TestAPHapusDataAdmin.tsap012001_admin_klik_tombol_hapus_data(TestAPHapusDataAdmin.java:41)
+	at ✽.TSAP012001 Admin klik tombol hapus data(file:///C:/Users/NEXSOFT/git/TARunanto/TARunanto/src/main/resources/features/091APHapusDataAdmin.feature:10)
 </pre></div></td>
-<td>8</td>
-<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
-<tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP002003 Admin mencari data dengan tombol enter pada keyboard", "TSAP002 Admin Search Data"</td>
-<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertTrue(Assert.java:56)
-	at org.testng.Assert.assertTrue(Assert.java:66)
-	at com.sqa.psikotes.framework.runner.TestAPSearchDataAdminValid.tsap002003_admin_berhasil_mencari_data_three_yang_dicari(TestAPSearchDataAdminValid.java:120)
-	at ✽.TSAP002003 Admin berhasil mencari DEVELOPER yang dicari(file:///C:/Users/NEXSOFT/git/TARunanto/TARunanto/src/main/resources/features/055APSearchDataAdminValid.feature:44)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1469963860", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1469963860'><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertTrue(Assert.java:56)
-	at org.testng.Assert.assertTrue(Assert.java:66)
-	at com.sqa.psikotes.framework.runner.TestAPSearchDataAdminValid.tsap002003_admin_berhasil_mencari_data_three_yang_dicari(TestAPSearchDataAdminValid.java:120)
-	at ✽.TSAP002003 Admin berhasil mencari DEVELOPER yang dicari(file:///C:/Users/NEXSOFT/git/TARunanto/TARunanto/src/main/resources/features/055APSearchDataAdminValid.feature:44)
-</pre></div></td>
-<td>8</td>
+<td>37</td>
 <td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
 <tr>
 <td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP003001 Admin menyetujui menambahkan data akun admin", "TSAP003 Tambah data akun admin"</td>
@@ -278,10 +218,10 @@ Session ID: e1accc8d0228df20bb517d9ead555577
 Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
 System info: host: &apos;LAPTOP-ASKQ9BMM&apos;, ip: &apos;10.0.0.250&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e1accc8d0228df20bb517d9ead555577, sendKeysToElement {id=7792d7fc-cb29-4f15-acbf-b94d016f30e8, value=[Ljava.lang.CharSequence;@14d298d6}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.103, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\NEXSOFT\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:55893}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55893/devtoo..., se:cdpVersion: 106.0.5249.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (e1accc8d0228df20bb517d9ead555577)] -&gt; xpath: //input[@id=&apos;tl_user_management--51690_text&apos;]]
-Session ID: e1accc8d0228df20bb517d9ead555577
+Command: [53b43f3dcae921f643ce3d3a88449cc9, sendKeysToElement {id=cb27f0cf-e821-4d39-8b97-319ca07a3c69, value=[Ljava.lang.CharSequence;@5b430541}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.103, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\NEXSOFT\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57895}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57895/devtoo..., se:cdpVersion: 106.0.5249.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (53b43f3dcae921f643ce3d3a88449cc9)] -&gt; xpath: //input[@id=&apos;tl_user_management--51690_text&apos;]]
+Session ID: 53b43f3dcae921f643ce3d3a88449cc9
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -304,16 +244,16 @@ Session ID: e1accc8d0228df20bb517d9ead555577
 	at com.sqa.psikotes.framework.page.AdminPage.searchDataAdmin(AdminPage.java:295)
 	at com.sqa.psikotes.framework.runner.TestAPTambahDataAdminValid.tsap003001_admin_berhasil_menambahkan_data_akun(TestAPTambahDataAdminValid.java:62)
 	at ✽.TSAP003001 Admin berhasil menambahkan Marissa akun(file:///C:/Users/NEXSOFT/git/TARunanto/TARunanto/src/main/resources/features/059APTambahDataAdminValid.feature:15)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1853827541", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1853827541'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+</pre></div><a href='#' onClick='toggleBox("stack-trace505973878", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace505973878'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: chrome=106.0.5249.103)
 Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
 System info: host: &apos;LAPTOP-ASKQ9BMM&apos;, ip: &apos;10.0.0.250&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e1accc8d0228df20bb517d9ead555577, sendKeysToElement {id=7792d7fc-cb29-4f15-acbf-b94d016f30e8, value=[Ljava.lang.CharSequence;@14d298d6}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.103, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\NEXSOFT\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:55893}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55893/devtoo..., se:cdpVersion: 106.0.5249.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (e1accc8d0228df20bb517d9ead555577)] -&gt; xpath: //input[@id=&apos;tl_user_management--51690_text&apos;]]
-Session ID: e1accc8d0228df20bb517d9ead555577
+Command: [53b43f3dcae921f643ce3d3a88449cc9, sendKeysToElement {id=cb27f0cf-e821-4d39-8b97-319ca07a3c69, value=[Ljava.lang.CharSequence;@5b430541}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.103, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\NEXSOFT\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57895}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57895/devtoo..., se:cdpVersion: 106.0.5249.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (53b43f3dcae921f643ce3d3a88449cc9)] -&gt; xpath: //input[@id=&apos;tl_user_management--51690_text&apos;]]
+Session ID: 53b43f3dcae921f643ce3d3a88449cc9
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -337,7 +277,7 @@ Session ID: e1accc8d0228df20bb517d9ead555577
 	at com.sqa.psikotes.framework.runner.TestAPTambahDataAdminValid.tsap003001_admin_berhasil_menambahkan_data_akun(TestAPTambahDataAdminValid.java:62)
 	at ✽.TSAP003001 Admin berhasil menambahkan Marissa akun(file:///C:/Users/NEXSOFT/git/TARunanto/TARunanto/src/main/resources/features/059APTambahDataAdminValid.feature:15)
 </pre></div></td>
-<td>19</td>
+<td>20</td>
 <td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
 <tr>
 <td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP009001 Admin mereset passwod akun admin", "TSAP009 Reset Password Akun admin"</td>
@@ -347,9 +287,9 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
 System info: host: &apos;LAPTOP-ASKQ9BMM&apos;, ip: &apos;10.0.0.250&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e1accc8d0228df20bb517d9ead555577, findElement {using=name, value=tl_user_management--51688_text}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.103, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\NEXSOFT\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:55893}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55893/devtoo..., se:cdpVersion: 106.0.5249.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: e1accc8d0228df20bb517d9ead555577
+Command: [53b43f3dcae921f643ce3d3a88449cc9, findElement {using=name, value=tl_user_management--51688_text}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.103, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\NEXSOFT\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57895}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57895/devtoo..., se:cdpVersion: 106.0.5249.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 53b43f3dcae921f643ce3d3a88449cc9
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -372,16 +312,16 @@ Session ID: e1accc8d0228df20bb517d9ead555577
 	at com.sqa.psikotes.framework.page.AdminPage.clickCheckPassword(AdminPage.java:586)
 	at com.sqa.psikotes.framework.runner.TestAPResetPasswordAdminValid.tsap009001_admin_klik_checkbox_pada_data_yang_akan_di_reset_passwordnya(TestAPResetPasswordAdminValid.java:41)
 	at ✽.TSAP009001 Admin klik checkbox pada data yang akan di reset passwordnya(file:///C:/Users/NEXSOFT/git/TARunanto/TARunanto/src/main/resources/features/081APResetPasswordValid.feature:8)
-</pre></div><a href='#' onClick='toggleBox("stack-trace473158969", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace473158969'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;tl_user_management--51688_text&apos;]&quot;}
+</pre></div><a href='#' onClick='toggleBox("stack-trace1929962198", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1929962198'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;tl_user_management--51688_text&apos;]&quot;}
   (Session info: chrome=106.0.5249.103)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
 System info: host: &apos;LAPTOP-ASKQ9BMM&apos;, ip: &apos;10.0.0.250&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e1accc8d0228df20bb517d9ead555577, findElement {using=name, value=tl_user_management--51688_text}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.103, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\NEXSOFT\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:55893}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55893/devtoo..., se:cdpVersion: 106.0.5249.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: e1accc8d0228df20bb517d9ead555577
+Command: [53b43f3dcae921f643ce3d3a88449cc9, findElement {using=name, value=tl_user_management--51688_text}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.103, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\NEXSOFT\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57895}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57895/devtoo..., se:cdpVersion: 106.0.5249.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 53b43f3dcae921f643ce3d3a88449cc9
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -406,234 +346,6 @@ Session ID: e1accc8d0228df20bb517d9ead555577
 	at ✽.TSAP009001 Admin klik checkbox pada data yang akan di reset passwordnya(file:///C:/Users/NEXSOFT/git/TARunanto/TARunanto/src/main/resources/features/081APResetPasswordValid.feature:8)
 </pre></div></td>
 <td>37</td>
-<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
-<tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP002002 Admin mencari data dengan  tombol enter (green button)", "TSAP002 Admin Search Data"</td>
-<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertTrue(Assert.java:56)
-	at org.testng.Assert.assertTrue(Assert.java:66)
-	at com.sqa.psikotes.framework.runner.TestAPSearchDataAdminValid.tsap002002_admin_berhasil_mencari_data_two_yang_dicari(TestAPSearchDataAdminValid.java:93)
-	at ✽.TSAP002002 Admin berhasil mencari ACTIVE yang dicari(file:///C:/Users/NEXSOFT/git/TARunanto/TARunanto/src/main/resources/features/055APSearchDataAdminValid.feature:29)
-</pre></div><a href='#' onClick='toggleBox("stack-trace541568490", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace541568490'><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertTrue(Assert.java:56)
-	at org.testng.Assert.assertTrue(Assert.java:66)
-	at com.sqa.psikotes.framework.runner.TestAPSearchDataAdminValid.tsap002002_admin_berhasil_mencari_data_two_yang_dicari(TestAPSearchDataAdminValid.java:93)
-	at ✽.TSAP002002 Admin berhasil mencari ACTIVE yang dicari(file:///C:/Users/NEXSOFT/git/TARunanto/TARunanto/src/main/resources/features/055APSearchDataAdminValid.feature:29)
-</pre></div></td>
-<td>8</td>
-<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
-<tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP002003 Admin mencari data dengan tombol enter pada keyboard", "TSAP002 Admin Search Data"</td>
-<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertTrue(Assert.java:56)
-	at org.testng.Assert.assertTrue(Assert.java:66)
-	at com.sqa.psikotes.framework.runner.TestAPSearchDataAdminValid.tsap002003_admin_berhasil_mencari_data_three_yang_dicari(TestAPSearchDataAdminValid.java:122)
-	at ✽.TSAP002003 Admin berhasil mencari 2771035365 yang dicari(file:///C:/Users/NEXSOFT/git/TARunanto/TARunanto/src/main/resources/features/055APSearchDataAdminValid.feature:44)
-</pre></div><a href='#' onClick='toggleBox("stack-trace98674643", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace98674643'><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertTrue(Assert.java:56)
-	at org.testng.Assert.assertTrue(Assert.java:66)
-	at com.sqa.psikotes.framework.runner.TestAPSearchDataAdminValid.tsap002003_admin_berhasil_mencari_data_three_yang_dicari(TestAPSearchDataAdminValid.java:122)
-	at ✽.TSAP002003 Admin berhasil mencari 2771035365 yang dicari(file:///C:/Users/NEXSOFT/git/TARunanto/TARunanto/src/main/resources/features/055APSearchDataAdminValid.feature:44)
-</pre></div></td>
-<td>8</td>
-<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
-<tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP002002 Admin mencari data dengan  tombol enter (green button)", "TSAP002 Admin Search Data"</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;tl_user_management--51690_text&apos;]&quot;}
-  (Session info: chrome=106.0.5249.103)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
-System info: host: &apos;LAPTOP-ASKQ9BMM&apos;, ip: &apos;10.0.0.250&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e1accc8d0228df20bb517d9ead555577, findElement {using=xpath, value=//input[@id=&apos;tl_user_management--51690_text&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.103, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\NEXSOFT\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:55893}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55893/devtoo..., se:cdpVersion: 106.0.5249.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: e1accc8d0228df20bb517d9ead555577
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy31.click(Unknown Source)
-	at com.sqa.psikotes.framework.page.AdminPage.clickInSearch(AdminPage.java:399)
-	at com.sqa.psikotes.framework.runner.TestAPSearchDataAdminValid.tsap002_admin_berhasil_klik_field_search_data_admin(TestAPSearchDataAdminValid.java:34)
-	at ✽.TSAP002 Admin berhasil klik field search data admin(file:///C:/Users/NEXSOFT/git/TARunanto/TARunanto/src/main/resources/features/055APSearchDataAdminValid.feature:8)
-</pre></div><a href='#' onClick='toggleBox("stack-trace585634812", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace585634812'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;tl_user_management--51690_text&apos;]&quot;}
-  (Session info: chrome=106.0.5249.103)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
-System info: host: &apos;LAPTOP-ASKQ9BMM&apos;, ip: &apos;10.0.0.250&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e1accc8d0228df20bb517d9ead555577, findElement {using=xpath, value=//input[@id=&apos;tl_user_management--51690_text&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.103, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\NEXSOFT\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:55893}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55893/devtoo..., se:cdpVersion: 106.0.5249.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: e1accc8d0228df20bb517d9ead555577
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy31.click(Unknown Source)
-	at com.sqa.psikotes.framework.page.AdminPage.clickInSearch(AdminPage.java:399)
-	at com.sqa.psikotes.framework.runner.TestAPSearchDataAdminValid.tsap002_admin_berhasil_klik_field_search_data_admin(TestAPSearchDataAdminValid.java:34)
-	at ✽.TSAP002 Admin berhasil klik field search data admin(file:///C:/Users/NEXSOFT/git/TARunanto/TARunanto/src/main/resources/features/055APSearchDataAdminValid.feature:8)
-</pre></div></td>
-<td>55</td>
-<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
-<tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP002002 Admin mencari data dengan  tombol enter (green button)", "TSAP002 Admin Search Data"</td>
-<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertTrue(Assert.java:56)
-	at org.testng.Assert.assertTrue(Assert.java:66)
-	at com.sqa.psikotes.framework.runner.TestAPSearchDataAdminValid.tsap002002_admin_berhasil_mencari_data_two_yang_dicari(TestAPSearchDataAdminValid.java:87)
-	at ✽.TSAP002002 Admin berhasil mencari Admin yang dicari(file:///C:/Users/NEXSOFT/git/TARunanto/TARunanto/src/main/resources/features/055APSearchDataAdminValid.feature:29)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1374243709", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1374243709'><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertTrue(Assert.java:56)
-	at org.testng.Assert.assertTrue(Assert.java:66)
-	at com.sqa.psikotes.framework.runner.TestAPSearchDataAdminValid.tsap002002_admin_berhasil_mencari_data_two_yang_dicari(TestAPSearchDataAdminValid.java:87)
-	at ✽.TSAP002002 Admin berhasil mencari Admin yang dicari(file:///C:/Users/NEXSOFT/git/TARunanto/TARunanto/src/main/resources/features/055APSearchDataAdminValid.feature:29)
-</pre></div></td>
-<td>23</td>
-<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
-<tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP002003 Admin mencari data dengan tombol enter pada keyboard", "TSAP002 Admin Search Data"</td>
-<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertTrue(Assert.java:56)
-	at org.testng.Assert.assertTrue(Assert.java:66)
-	at com.sqa.psikotes.framework.runner.TestAPSearchDataAdminValid.tsap002003_admin_berhasil_mencari_data_three_yang_dicari(TestAPSearchDataAdminValid.java:124)
-	at ✽.TSAP002003 Admin berhasil mencari ACTIVE yang dicari(file:///C:/Users/NEXSOFT/git/TARunanto/TARunanto/src/main/resources/features/055APSearchDataAdminValid.feature:44)
-</pre></div><a href='#' onClick='toggleBox("stack-trace459249162", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace459249162'><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertTrue(Assert.java:56)
-	at org.testng.Assert.assertTrue(Assert.java:66)
-	at com.sqa.psikotes.framework.runner.TestAPSearchDataAdminValid.tsap002003_admin_berhasil_mencari_data_three_yang_dicari(TestAPSearchDataAdminValid.java:124)
-	at ✽.TSAP002003 Admin berhasil mencari ACTIVE yang dicari(file:///C:/Users/NEXSOFT/git/TARunanto/TARunanto/src/main/resources/features/055APSearchDataAdminValid.feature:44)
-</pre></div></td>
-<td>8</td>
-<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
-<tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP002002 Admin mencari data dengan  tombol enter (green button)", "TSAP002 Admin Search Data"</td>
-<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertTrue(Assert.java:56)
-	at org.testng.Assert.assertTrue(Assert.java:66)
-	at com.sqa.psikotes.framework.runner.TestAPSearchDataAdminValid.tsap002002_admin_berhasil_mencari_data_two_yang_dicari(TestAPSearchDataAdminValid.java:85)
-	at ✽.TSAP002002 Admin berhasil mencari Tyler yang dicari(file:///C:/Users/NEXSOFT/git/TARunanto/TARunanto/src/main/resources/features/055APSearchDataAdminValid.feature:29)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1628800110", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1628800110'><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertTrue(Assert.java:56)
-	at org.testng.Assert.assertTrue(Assert.java:66)
-	at com.sqa.psikotes.framework.runner.TestAPSearchDataAdminValid.tsap002002_admin_berhasil_mencari_data_two_yang_dicari(TestAPSearchDataAdminValid.java:85)
-	at ✽.TSAP002002 Admin berhasil mencari Tyler yang dicari(file:///C:/Users/NEXSOFT/git/TARunanto/TARunanto/src/main/resources/features/055APSearchDataAdminValid.feature:29)
-</pre></div></td>
-<td>8</td>
-<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
-<tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP002003 Admin mencari data dengan tombol enter pada keyboard", "TSAP002 Admin Search Data"</td>
-<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertTrue(Assert.java:56)
-	at org.testng.Assert.assertTrue(Assert.java:66)
-	at com.sqa.psikotes.framework.runner.TestAPSearchDataAdminValid.tsap002003_admin_berhasil_mencari_data_three_yang_dicari(TestAPSearchDataAdminValid.java:116)
-	at ✽.TSAP002003 Admin berhasil mencari Nick Doherty yang dicari(file:///C:/Users/NEXSOFT/git/TARunanto/TARunanto/src/main/resources/features/055APSearchDataAdminValid.feature:44)
-</pre></div><a href='#' onClick='toggleBox("stack-trace661868623", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace661868623'><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertTrue(Assert.java:56)
-	at org.testng.Assert.assertTrue(Assert.java:66)
-	at com.sqa.psikotes.framework.runner.TestAPSearchDataAdminValid.tsap002003_admin_berhasil_mencari_data_three_yang_dicari(TestAPSearchDataAdminValid.java:116)
-	at ✽.TSAP002003 Admin berhasil mencari Nick Doherty yang dicari(file:///C:/Users/NEXSOFT/git/TARunanto/TARunanto/src/main/resources/features/055APSearchDataAdminValid.feature:44)
-</pre></div></td>
-<td>8</td>
-<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
-<tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP002003 Admin mencari data dengan tombol enter pada keyboard", "TSAP002 Admin Search Data"</td>
-<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertTrue(Assert.java:56)
-	at org.testng.Assert.assertTrue(Assert.java:66)
-	at com.sqa.psikotes.framework.runner.TestAPSearchDataAdminValid.tsap002003_admin_berhasil_mencari_data_three_yang_dicari(TestAPSearchDataAdminValid.java:118)
-	at ✽.TSAP002003 Admin berhasil mencari Admin yang dicari(file:///C:/Users/NEXSOFT/git/TARunanto/TARunanto/src/main/resources/features/055APSearchDataAdminValid.feature:44)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1325322464", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1325322464'><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertTrue(Assert.java:56)
-	at org.testng.Assert.assertTrue(Assert.java:66)
-	at com.sqa.psikotes.framework.runner.TestAPSearchDataAdminValid.tsap002003_admin_berhasil_mencari_data_three_yang_dicari(TestAPSearchDataAdminValid.java:118)
-	at ✽.TSAP002003 Admin berhasil mencari Admin yang dicari(file:///C:/Users/NEXSOFT/git/TARunanto/TARunanto/src/main/resources/features/055APSearchDataAdminValid.feature:44)
-</pre></div></td>
-<td>8</td>
-<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
-<tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP002003 Admin mencari data dengan tombol enter pada keyboard", "TSAP002 Admin Search Data"</td>
-<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertTrue(Assert.java:56)
-	at org.testng.Assert.assertTrue(Assert.java:66)
-	at com.sqa.psikotes.framework.runner.TestAPSearchDataAdminValid.tsap002003_admin_berhasil_mencari_data_three_yang_dicari(TestAPSearchDataAdminValid.java:126)
-	at ✽.TSAP002003 Admin berhasil mencari Elijah yang dicari(file:///C:/Users/NEXSOFT/git/TARunanto/TARunanto/src/main/resources/features/055APSearchDataAdminValid.feature:44)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1195776473", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1195776473'><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertTrue(Assert.java:56)
-	at org.testng.Assert.assertTrue(Assert.java:66)
-	at com.sqa.psikotes.framework.runner.TestAPSearchDataAdminValid.tsap002003_admin_berhasil_mencari_data_three_yang_dicari(TestAPSearchDataAdminValid.java:126)
-	at ✽.TSAP002003 Admin berhasil mencari Elijah yang dicari(file:///C:/Users/NEXSOFT/git/TARunanto/TARunanto/src/main/resources/features/055APSearchDataAdminValid.feature:44)
-</pre></div></td>
-<td>8</td>
 <td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -645,72 +357,22 @@ Session ID: e1accc8d0228df20bb517d9ead555577
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP005012 Admin menampilkan10 data admin pada page paling terakhir", "TSAP005 Menampilkan10 Data admin"</td>
-<td></td>
-<td>9</td>
-<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
-<tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP010004 Admin mengubah semua field pada akun admin", "TSAP010 Edit data akun admin"</td>
-<td></td>
-<td>37</td>
-<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
-<tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP001001 Admin masuk ke halaman admin", "TSAP001 Masuk halaman admin"</td>
-<td></td>
-<td>11</td>
-<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
-<tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP010001 Admin mengubah satu field pada akun admin", "TSAP010 Edit data akun admin"</td>
-<td></td>
-<td>15</td>
-<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
-<tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP010001 Admin mengubah satu field pada akun admin", "TSAP010 Edit data akun admin"</td>
-<td></td>
-<td>15</td>
-<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
-<tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP011002 Admin menyetujui edit password", "TSAP011 Edit password admin"</td>
-<td></td>
-<td>33</td>
-<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
-<tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "TSAPN014 Admin tambah data invalid"</td>
-<td></td>
-<td>19</td>
-<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
-<tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP010001 Admin mengubah satu field pada akun admin", "TSAP010 Edit data akun admin"</td>
-<td></td>
-<td>15</td>
-<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
-<tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP004001 Admin menampilkan10 data admin", "TSAP004 Menampilkan data admin"</td>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP002002 Admin mencari data dengan  tombol enter (green button)", "TSAP002 Admin Search Data"</td>
 <td></td>
 <td>8</td>
 <td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
 <tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP010002 Admin mengubah dua field pada akun admin", "TSAP010 Edit data akun admin"</td>
-<td></td>
-<td>22</td>
-<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
-<tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSLO002001N Admin membatalkan logout dari website", "TSLO002 Admin Logout"</td>
-<td></td>
-<td>5</td>
-<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
-<tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP010002 Admin mengubah dua field pada akun admin", "TSAP010 Edit data akun admin"</td>
-<td></td>
-<td>22</td>
-<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
-<tr>
 <td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "TSAPN014 Admin tambah data invalid"</td>
 <td></td>
 <td>19</td>
 <td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
 <tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP006006 Admin menampilkan25 data admin pada page paling terakhir", "TSAP006 Menampilkan25 data admin"</td>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAPN013001 Admin mencari data dengan tombol search", "TSAPN013 Admin Search Data Invalid"</td>
+<td></td>
+<td>9</td>
+<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
+<tr>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP005003 Admin menampilkan10 data  admin pada page ke3", "TSAP005 Menampilkan10 Data admin"</td>
 <td></td>
 <td>9</td>
 <td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
@@ -720,44 +382,19 @@ Session ID: e1accc8d0228df20bb517d9ead555577
 <td>10</td>
 <td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
 <tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP010003 Admin mengubah tiga field pada akun admin", "TSAP010 Edit data akun admin"</td>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "TSAPN014 Admin tambah data invalid"</td>
 <td></td>
-<td>30</td>
+<td>19</td>
 <td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
 <tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP010002 Admin mengubah dua field pada akun admin", "TSAP010 Edit data akun admin"</td>
-<td></td>
-<td>23</td>
-<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
-<tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP011002 Admin menyetujui edit password", "TSAP011 Edit password admin"</td>
-<td></td>
-<td>33</td>
-<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
-<tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP005004 Admin menampilkan10 data  admin pada page ke4", "TSAP005 Menampilkan10 Data admin"</td>
-<td></td>
-<td>9</td>
-<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
-<tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP002001 Admin mencari data dengan tombol search", "TSAP002 Admin Search Data"</td>
-<td></td>
-<td>8</td>
-<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
-<tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP005009 Admin menampilkan10 data  admin pada page ke9", "TSAP005 Menampilkan10 Data admin"</td>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP005007 Admin menampilkan10 data  admin pada page ke7", "TSAP005 Menampilkan10 Data admin"</td>
 <td></td>
 <td>10</td>
 <td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
 <tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP011001 Admin tidak menyetujui edit password", "TSAP011 Edit password admin"</td>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "TSAPN014 Admin tambah data invalid"</td>
 <td></td>
-<td>30</td>
-<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
-<tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP010003 Admin mengubah tiga field pada akun admin", "TSAP010 Edit data akun admin"</td>
-<td></td>
-<td>30</td>
+<td>19</td>
 <td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
 <tr>
 <td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP010001 Admin mengubah satu field pada akun admin", "TSAP010 Edit data akun admin"</td>
@@ -765,9 +402,69 @@ Session ID: e1accc8d0228df20bb517d9ead555577
 <td>15</td>
 <td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
 <tr>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP011002 Admin menyetujui edit password", "TSAP011 Edit password admin"</td>
+<td></td>
+<td>33</td>
+<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
+<tr>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP002003 Admin mencari data dengan tombol enter pada keyboard", "TSAP002 Admin Search Data"</td>
+<td></td>
+<td>8</td>
+<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
+<tr>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP005002 Admin menampilkan10 data  admin pada page ke2", "TSAP005 Menampilkan10 Data admin"</td>
+<td></td>
+<td>9</td>
+<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
+<tr>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP006002 Admin menampilkan25 data admin pada page ke2", "TSAP006 Menampilkan25 data admin"</td>
+<td></td>
+<td>9</td>
+<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
+<tr>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSLO002002N Admin membatalkan logout dari website", "TSLO002 Admin Logout"</td>
+<td></td>
+<td>5</td>
+<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
+<tr>
 <td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP010002 Admin mengubah dua field pada akun admin", "TSAP010 Edit data akun admin"</td>
 <td></td>
 <td>22</td>
+<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
+<tr>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP011001 Admin tidak menyetujui edit password", "TSAP011 Edit password admin"</td>
+<td></td>
+<td>30</td>
+<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
+<tr>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAPN013001 Admin mencari data dengan tombol search", "TSAPN013 Admin Search Data Invalid"</td>
+<td></td>
+<td>8</td>
+<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
+<tr>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP006003 Admin menampilkan25 data admin pada page ke3", "TSAP006 Menampilkan25 data admin"</td>
+<td></td>
+<td>9</td>
+<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
+<tr>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP005001 Admin menampilkan10 data  admin pada page ke1", "TSAP005 Menampilkan10 Data admin"</td>
+<td></td>
+<td>9</td>
+<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
+<tr>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "TSAPN014 Admin tambah data invalid"</td>
+<td></td>
+<td>19</td>
+<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
+<tr>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP004003 Admin menampilkan50 data admin", "TSAP004 Menampilkan data admin"</td>
+<td></td>
+<td>9</td>
+<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
+<tr>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP007004 Admin menampilkan50 data admin pada page <<", "TSAP007 Menampilkan50 data admin"</td>
+<td></td>
+<td>10</td>
 <td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
 <tr>
 <td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP010003 Admin mengubah tiga field pada akun admin", "TSAP010 Edit data akun admin"</td>
@@ -775,7 +472,17 @@ Session ID: e1accc8d0228df20bb517d9ead555577
 <td>30</td>
 <td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
 <tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP004002 Admin menampilkan25 data admin", "TSAP004 Menampilkan data admin"</td>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP011001 Admin tidak menyetujui edit password", "TSAP011 Edit password admin"</td>
+<td></td>
+<td>30</td>
+<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
+<tr>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP002001 Admin mencari data dengan tombol search", "TSAP002 Admin Search Data"</td>
+<td></td>
+<td>9</td>
+<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
+<tr>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAPN013002 Admin mencari data dengan  tombol enter (green button)", "TSAPN013 Admin Search Data Invalid"</td>
 <td></td>
 <td>9</td>
 <td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
@@ -785,9 +492,94 @@ Session ID: e1accc8d0228df20bb517d9ead555577
 <td>9</td>
 <td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
 <tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP005010 Admin menampilkan10 data  admin pada page ke10", "TSAP005 Menampilkan10 Data admin"</td>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP001001 Admin masuk ke halaman admin", "TSAP001 Masuk halaman admin"</td>
+<td></td>
+<td>14</td>
+<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
+<tr>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP010002 Admin mengubah dua field pada akun admin", "TSAP010 Edit data akun admin"</td>
+<td></td>
+<td>22</td>
+<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
+<tr>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP010002 Admin mengubah dua field pada akun admin", "TSAP010 Edit data akun admin"</td>
+<td></td>
+<td>22</td>
+<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
+<tr>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP002001 Admin mencari data dengan tombol search", "TSAP002 Admin Search Data"</td>
+<td></td>
+<td>8</td>
+<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
+<tr>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP005012 Admin menampilkan10 data admin pada page paling terakhir", "TSAP005 Menampilkan10 Data admin"</td>
+<td></td>
+<td>9</td>
+<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
+<tr>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP006005 Admin menampilkan25 data admin pada page paling awal", "TSAP006 Menampilkan25 data admin"</td>
 <td></td>
 <td>10</td>
+<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
+<tr>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP002001 Admin mencari data dengan tombol search", "TSAP002 Admin Search Data"</td>
+<td></td>
+<td>9</td>
+<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
+<tr>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP004002 Admin menampilkan25 data admin", "TSAP004 Menampilkan data admin"</td>
+<td></td>
+<td>8</td>
+<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
+<tr>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP007001 Admin menampilkan50 data admin pada page ke1", "TSAP007 Menampilkan50 data admin"</td>
+<td></td>
+<td>9</td>
+<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
+<tr>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP011002 Admin menyetujui edit password", "TSAP011 Edit password admin"</td>
+<td></td>
+<td>33</td>
+<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
+<tr>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP010002 Admin mengubah dua field pada akun admin", "TSAP010 Edit data akun admin"</td>
+<td></td>
+<td>22</td>
+<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
+<tr>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP005009 Admin menampilkan10 data  admin pada page ke9", "TSAP005 Menampilkan10 Data admin"</td>
+<td></td>
+<td>10</td>
+<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
+<tr>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP002003 Admin mencari data dengan tombol enter pada keyboard", "TSAP002 Admin Search Data"</td>
+<td></td>
+<td>8</td>
+<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
+<tr>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP011002 Admin menyetujui edit password", "TSAP011 Edit password admin"</td>
+<td></td>
+<td>32</td>
+<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
+<tr>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP011001 Admin tidak menyetujui edit password", "TSAP011 Edit password admin"</td>
+<td></td>
+<td>30</td>
+<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
+<tr>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "TSAPN014 Admin tambah data invalid"</td>
+<td></td>
+<td>19</td>
+<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
+<tr>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP002002 Admin mencari data dengan  tombol enter (green button)", "TSAP002 Admin Search Data"</td>
+<td></td>
+<td>8</td>
+<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
+<tr>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP002002 Admin mencari data dengan  tombol enter (green button)", "TSAP002 Admin Search Data"</td>
+<td></td>
+<td>8</td>
 <td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
 <tr>
 <td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP002001 Admin mencari data dengan tombol search", "TSAP002 Admin Search Data"</td>
@@ -800,119 +592,19 @@ Session ID: e1accc8d0228df20bb517d9ead555577
 <td>7</td>
 <td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
 <tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "TSAPN014 Admin tambah data invalid"</td>
-<td></td>
-<td>19</td>
-<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
-<tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP004003 Admin menampilkan50 data admin", "TSAP004 Menampilkan data admin"</td>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP002002 Admin mencari data dengan  tombol enter (green button)", "TSAP002 Admin Search Data"</td>
 <td></td>
 <td>8</td>
 <td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
 <tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "TSAPN014 Admin tambah data invalid"</td>
-<td></td>
-<td>19</td>
-<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
-<tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP006003 Admin menampilkan25 data admin pada page ke3", "TSAP006 Menampilkan25 data admin"</td>
-<td></td>
-<td>10</td>
-<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
-<tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP008001 Admin menampilkan100 data admin pada page ke1", "TSAP008 Menampilkan100 data admin"</td>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP004001 Admin menampilkan10 data admin", "TSAP004 Menampilkan data admin"</td>
 <td></td>
 <td>8</td>
 <td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
 <tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "TSAPN014 Admin tambah data invalid"</td>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP010002 Admin mengubah dua field pada akun admin", "TSAP010 Edit data akun admin"</td>
 <td></td>
-<td>19</td>
-<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
-<tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAPN013002 Admin mencari data dengan  tombol enter (green button)", "TSAPN013 Admin Search Data Invalid"</td>
-<td></td>
-<td>8</td>
-<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
-<tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "TSAPN014 Admin tambah data invalid"</td>
-<td></td>
-<td>19</td>
-<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
-<tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "TSAPN014 Admin tambah data invalid"</td>
-<td></td>
-<td>19</td>
-<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
-<tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP003002 Admin tidak menyetujui menambahkan data akun admin", "TSAP003 Tambah data akun admin"</td>
-<td></td>
-<td>23</td>
-<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
-<tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP005003 Admin menampilkan10 data  admin pada page ke3", "TSAP005 Menampilkan10 Data admin"</td>
-<td></td>
-<td>9</td>
-<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
-<tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "TSAPN014 Admin tambah data invalid"</td>
-<td></td>
-<td>19</td>
-<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
-<tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP006005 Admin menampilkan25 data admin pada page paling awal", "TSAP006 Menampilkan25 data admin"</td>
-<td></td>
-<td>10</td>
-<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
-<tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP006001 Admin menampilkan25 data admin pada page ke1", "TSAP006 Menampilkan25 data admin"</td>
-<td></td>
-<td>9</td>
-<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
-<tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP011002 Admin menyetujui edit password", "TSAP011 Edit password admin"</td>
-<td></td>
-<td>33</td>
-<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
-<tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAPN013001 Admin mencari data dengan tombol search", "TSAPN013 Admin Search Data Invalid"</td>
-<td></td>
-<td>8</td>
-<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
-<tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "TSAPN014 Admin tambah data invalid"</td>
-<td></td>
-<td>19</td>
-<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
-<tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP002001 Admin mencari data dengan tombol search", "TSAP002 Admin Search Data"</td>
-<td></td>
-<td>8</td>
-<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
-<tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "TSAPN014 Admin tambah data invalid"</td>
-<td></td>
-<td>19</td>
-<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
-<tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP005008 Admin menampilkan10 data  admin pada page ke8", "TSAP005 Menampilkan10 Data admin"</td>
-<td></td>
-<td>10</td>
-<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
-<tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP006004 Admin menampilkan25 data admin pada page ke4", "TSAP006 Menampilkan25 data admin"</td>
-<td></td>
-<td>9</td>
-<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
-<tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP005007 Admin menampilkan10 data  admin pada page ke7", "TSAP005 Menampilkan10 Data admin"</td>
-<td></td>
-<td>10</td>
-<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
-<tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP007003 Admin menampilkan50 data admin pada page >>", "TSAP007 Menampilkan50 data admin"</td>
-<td></td>
-<td>9</td>
+<td>36</td>
 <td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
 <tr>
 <td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAPN013003 Admin mencari data dengan tombol enter pada keyboard", "TSAPN013 Admin Search Data Invalid"</td>
@@ -920,14 +612,19 @@ Session ID: e1accc8d0228df20bb517d9ead555577
 <td>8</td>
 <td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
 <tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP011001 Admin tidak menyetujui edit password", "TSAP011 Edit password admin"</td>
-<td></td>
-<td>30</td>
-<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
-<tr>
 <td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP002001 Admin mencari data dengan tombol search", "TSAP002 Admin Search Data"</td>
 <td></td>
 <td>8</td>
+<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
+<tr>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP005004 Admin menampilkan10 data  admin pada page ke4", "TSAP005 Menampilkan10 Data admin"</td>
+<td></td>
+<td>9</td>
+<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
+<tr>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP005010 Admin menampilkan10 data  admin pada page ke10", "TSAP005 Menampilkan10 Data admin"</td>
+<td></td>
+<td>10</td>
 <td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
 <tr>
 <td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "TSAPN014 Admin tambah data invalid"</td>
@@ -935,9 +632,109 @@ Session ID: e1accc8d0228df20bb517d9ead555577
 <td>19</td>
 <td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
 <tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP010002 Admin mengubah dua field pada akun admin", "TSAP010 Edit data akun admin"</td>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "TSAPN014 Admin tambah data invalid"</td>
 <td></td>
-<td>22</td>
+<td>19</td>
+<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
+<tr>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSLO002002 Admin berhasil logout dari website", "TSLO002 Admin Logout"</td>
+<td></td>
+<td>5</td>
+<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
+<tr>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP002001 Admin mencari data dengan tombol search", "TSAP002 Admin Search Data"</td>
+<td></td>
+<td>8</td>
+<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
+<tr>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP010003 Admin mengubah tiga field pada akun admin", "TSAP010 Edit data akun admin"</td>
+<td></td>
+<td>30</td>
+<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
+<tr>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP010001 Admin mengubah satu field pada akun admin", "TSAP010 Edit data akun admin"</td>
+<td></td>
+<td>15</td>
+<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
+<tr>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP010001 Admin mengubah satu field pada akun admin", "TSAP010 Edit data akun admin"</td>
+<td></td>
+<td>15</td>
+<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
+<tr>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "TSAPN014 Admin tambah data invalid"</td>
+<td></td>
+<td>19</td>
+<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
+<tr>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSLO002001N Admin membatalkan logout dari website", "TSLO002 Admin Logout"</td>
+<td></td>
+<td>5</td>
+<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
+<tr>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "TSAPN014 Admin tambah data invalid"</td>
+<td></td>
+<td>19</td>
+<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
+<tr>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP002003 Admin mencari data dengan tombol enter pada keyboard", "TSAP002 Admin Search Data"</td>
+<td></td>
+<td>8</td>
+<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
+<tr>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP006006 Admin menampilkan25 data admin pada page paling terakhir", "TSAP006 Menampilkan25 data admin"</td>
+<td></td>
+<td>10</td>
+<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
+<tr>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP010001 Admin mengubah satu field pada akun admin", "TSAP010 Edit data akun admin"</td>
+<td></td>
+<td>15</td>
+<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
+<tr>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "TSAPN014 Admin tambah data invalid"</td>
+<td></td>
+<td>19</td>
+<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
+<tr>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP006001 Admin menampilkan25 data admin pada page ke1", "TSAP006 Menampilkan25 data admin"</td>
+<td></td>
+<td>9</td>
+<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
+<tr>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "TSAPN014 Admin tambah data invalid"</td>
+<td></td>
+<td>20</td>
+<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
+<tr>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP002002 Admin mencari data dengan  tombol enter (green button)", "TSAP002 Admin Search Data"</td>
+<td></td>
+<td>8</td>
+<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
+<tr>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP002002 Admin mencari data dengan  tombol enter (green button)", "TSAP002 Admin Search Data"</td>
+<td></td>
+<td>8</td>
+<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
+<tr>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP006004 Admin menampilkan25 data admin pada page ke4", "TSAP006 Menampilkan25 data admin"</td>
+<td></td>
+<td>9</td>
+<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
+<tr>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP002003 Admin mencari data dengan tombol enter pada keyboard", "TSAP002 Admin Search Data"</td>
+<td></td>
+<td>8</td>
+<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
+<tr>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP008001 Admin menampilkan100 data admin pada page ke1", "TSAP008 Menampilkan100 data admin"</td>
+<td></td>
+<td>8</td>
+<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
+<tr>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP010003 Admin mengubah tiga field pada akun admin", "TSAP010 Edit data akun admin"</td>
+<td></td>
+<td>30</td>
 <td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
 <tr>
 <td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "TSAPN014 Admin tambah data invalid"</td>
@@ -950,49 +747,19 @@ Session ID: e1accc8d0228df20bb517d9ead555577
 <td>9</td>
 <td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
 <tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP002001 Admin mencari data dengan tombol search", "TSAP002 Admin Search Data"</td>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP010002 Admin mengubah dua field pada akun admin", "TSAP010 Edit data akun admin"</td>
+<td></td>
+<td>22</td>
+<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
+<tr>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP002003 Admin mencari data dengan tombol enter pada keyboard", "TSAP002 Admin Search Data"</td>
 <td></td>
 <td>8</td>
 <td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
 <tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "TSAPN014 Admin tambah data invalid"</td>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP005008 Admin menampilkan10 data  admin pada page ke8", "TSAP005 Menampilkan10 Data admin"</td>
 <td></td>
-<td>19</td>
-<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
-<tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP007001 Admin menampilkan50 data admin pada page ke1", "TSAP007 Menampilkan50 data admin"</td>
-<td></td>
-<td>9</td>
-<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
-<tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "TSAPN014 Admin tambah data invalid"</td>
-<td></td>
-<td>19</td>
-<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
-<tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP005001 Admin menampilkan10 data  admin pada page ke1", "TSAP005 Menampilkan10 Data admin"</td>
-<td></td>
-<td>9</td>
-<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
-<tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP002001 Admin mencari data dengan tombol search", "TSAP002 Admin Search Data"</td>
-<td></td>
-<td>9</td>
-<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
-<tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAPN013001 Admin mencari data dengan tombol search", "TSAPN013 Admin Search Data Invalid"</td>
-<td></td>
-<td>9</td>
-<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
-<tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSLO002002 Admin berhasil logout dari website", "TSLO002 Admin Logout"</td>
-<td></td>
-<td>5</td>
-<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
-<tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSLO002002N Admin membatalkan logout dari website", "TSLO002 Admin Logout"</td>
-<td></td>
-<td>5</td>
+<td>10</td>
 <td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
 <tr>
 <td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAPN013003 Admin mencari data dengan tombol enter pada keyboard", "TSAPN013 Admin Search Data Invalid"</td>
@@ -1000,19 +767,34 @@ Session ID: e1accc8d0228df20bb517d9ead555577
 <td>8</td>
 <td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
 <tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP006002 Admin menampilkan25 data admin pada page ke2", "TSAP006 Menampilkan25 data admin"</td>
-<td></td>
-<td>9</td>
-<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
-<tr>
 <td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAPN013002 Admin mencari data dengan  tombol enter (green button)", "TSAPN013 Admin Search Data Invalid"</td>
 <td></td>
 <td>8</td>
 <td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
 <tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP010002 Admin mengubah dua field pada akun admin", "TSAP010 Edit data akun admin"</td>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP010004 Admin mengubah semua field pada akun admin", "TSAP010 Edit data akun admin"</td>
 <td></td>
-<td>22</td>
+<td>37</td>
+<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
+<tr>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "TSAPN014 Admin tambah data invalid"</td>
+<td></td>
+<td>19</td>
+<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
+<tr>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP002003 Admin mencari data dengan tombol enter pada keyboard", "TSAP002 Admin Search Data"</td>
+<td></td>
+<td>9</td>
+<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
+<tr>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP003002 Admin tidak menyetujui menambahkan data akun admin", "TSAP003 Tambah data akun admin"</td>
+<td></td>
+<td>24</td>
+<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
+<tr>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "TSAPN014 Admin tambah data invalid"</td>
+<td></td>
+<td>19</td>
 <td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
 <tr>
 <td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP005006 Admin menampilkan10 data  admin pada page ke6", "TSAP005 Menampilkan10 Data admin"</td>
@@ -1020,19 +802,9 @@ Session ID: e1accc8d0228df20bb517d9ead555577
 <td>9</td>
 <td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
 <tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP005002 Admin menampilkan10 data  admin pada page ke2", "TSAP005 Menampilkan10 Data admin"</td>
+<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP007003 Admin menampilkan50 data admin pada page >>", "TSAP007 Menampilkan50 data admin"</td>
 <td></td>
-<td>9</td>
-<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
-<tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP011001 Admin tidak menyetujui edit password", "TSAP011 Edit password admin"</td>
-<td></td>
-<td>30</td>
-<td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
-<tr>
-<td title='com.sqa.psikotes.framework.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.sqa.psikotes.framework.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TSAP007004 Admin menampilkan50 data admin pada page <<", "TSAP007 Menampilkan50 data admin"</td>
-<td></td>
-<td>10</td>
+<td>11</td>
 <td>com.sqa.psikotes.framework.runner.TestRunner@2767e23c</td></tr>
 </table><p>
 </body>
